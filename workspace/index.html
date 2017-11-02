@@ -194,14 +194,7 @@
 			<span class="td-icon td-copy-white td-icon-password td-floatright"></span>
 		</a>
 	</div>
-	
-	<!-- <div class="td-quick-actions-mobile">
-		<ul>
-			<li><a href="/claims"><span class="td-icon-wrapper td-interactive-icon td-icon td-icon-claims td-copy-white td-background-brightgreen" aria-hidden="true"></span><h4 class="label">File a Claim</h4></a></li>
-			<li><a href="javascript:void(0);"
-		onclick="$('#modalQuoterTDI').tdModal({'show':true});"><span class="td-icon-wrapper td-interactive-icon td-icon td-icon-GetAQuote td-copy-white td-background-orange" aria-hidden="true"></span><h4 class="label">Get a Quote</h4></a></li>
-		</ul>
-	</div> -->
+
 	
 	<nav class="td_rq_menu td-navigation td-left-menu" role="navigation" aria-label="Main Navigation">
 		<div class="td-container" id="navContainer">
@@ -521,8 +514,7 @@
 							</select>
 						</div>
 						<div class="col-sm-12 col-lg-3">
-							<input required type="text" name="First Name" id="First Name" class="" placeholder="First Name*" required="required"
-								pattern="{A-Za-z}" Title="Please enter your name" aria-required="true" aria-invalid="false" aria-describedby="FirstName-Required"
+							<input type="text" name="First Name" id="First Name"  placeholder="First Name*" required="required" pattern="{A-Za-z}" Title="Please enter your name" aria-required="true" aria-invalid="false" aria-describedby="FirstName-Required"
 								size="20" />
 						</div>
 						<div class="col-sm-12 col-lg-3">
@@ -538,7 +530,7 @@
 					</div>
 					<div class="row form-fields">
 						<div class="col-sm-12 col-lg-5">
-							<input required type="email" name="email" id="email" size="25" class="" placeholder="Email Address*" aria-required="true"
+							<input required type="email" name="email" id="email" size="30" class="" placeholder="Email Address*" aria-required="true"
 								aria-invalid="false" aria-describedby="email-Required" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
 								required />
 							<div class="tooltipkm">
@@ -551,7 +543,7 @@
 								aria-invalid="false" aria-describedby="dob-Required" />
 						</div>
 						<div class="col-sm-12 col-lg-4">
-							<input required type="number" name="ssn" id="ssn" size="25" class="" placeholder="Social Insurance Number*" pattern="[0-9]{9}"
+							<input required type="number" name="ssn" id="ssn" size="30" class="" placeholder="Social Insurance Number*" pattern="[0-9]{9}"
 								title="Please use format xxxxxxxxx" required="required" td-ui-validate-function="" required type="text" aria-required="true"
 								aria-invalid="false" aria-describedby="ssn-format" />
 							<div class="tooltipkm">
