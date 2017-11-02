@@ -1,0 +1,2345 @@
+/*! TD Emerald Standards - v1.3.7 - 2017-04-13, 10:04:56 */
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    color: #616161;
+    border: 0
+}
+label {
+    display: inline;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-weight: 400
+}
+label.empty {
+    display: block!important
+}
+input[type=search] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+input[type=file] {
+    display: block
+}
+select[multiple],
+select[size] {
+    height: auto
+}
+select optgroup {
+    font-size: inherit;
+    font-style: inherit;
+    font-family: inherit
+}
+input[type=checkbox]:focus,
+input[type=file]:focus,
+input[type=radio]:focus {
+    outline: #333 dotted thin;
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px
+}
+output {
+    display: block;
+    padding-top: 7px;
+    font-size: 16px;
+    line-height: 1.42857;
+    color: #1c1c1c;
+    vertical-align: middle
+}
+.form-control {
+    display: block;
+    padding: 0 .5rem .1875rem;
+    margin: .9375rem 2.1875rem 0;
+    color: #1c1c1c;
+    font-weight: 400;
+    vertical-align: middle;
+    background-color: transparent;
+    background-image: none;
+    border: solid #dadada;
+    border-radius: 0;
+    outline: 0;
+    -webkit-transition: border-color 300ms ease-in-out;
+    -moz-transition: border-color 300ms ease-in-out;
+    -o-transition: border-color 300ms ease-in-out;
+    transition: border-color 300ms ease-in-out
+}
+@media (max-width: 74.93em) {
+    .form-control {
+        margin: .9375rem 0 0 .9375rem;
+        width: -webkit-calc(100% - 15px);
+        width: calc(100% - 15px)
+    }
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+    cursor: not-allowed;
+    background-color: #f3f3f3;
+    opacity: 1
+}
+.form-control-margins {
+    margin: 0 2.1875rem
+}
+@media (max-width: 74.93em) {
+    .form-control-margins {
+        margin: 0 0 0 .9375rem;
+        width: -webkit-calc(100% - 15px);
+        width: calc(100% - 15px)
+    }
+}
+textarea.form-control {
+    height: auto;
+    resize: none!important
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto;
+    -webkit-appearance: none;
+    margin: 0
+}
+input[type=number] {
+    -moz-appearance: textfield
+}
+.form-group .form-control {
+    margin-top: 0
+}
+.form-group>label {
+    display: inline;
+    margin-bottom: 0
+}
+.td-select {
+    position: relative;
+    vertical-align: middle;
+    padding-bottom: 3px;
+    z-index: 2;
+    -webkit-transition: border-color ease-in-out .15s;
+    transition: border-color ease-in-out .15s
+}
+.td-select select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #1c1c1c
+}
+.td-select select {
+    color: #616161;
+    line-height: 1.4;
+    overflow: hidden;
+    opacity: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -ms-user-select: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    margin-bottom: -3px;
+    padding-right: 34px;
+    width: 100%!important
+}
+.td-select select::-ms-expand {
+    display: none
+}
+.td-select:after,
+.td-select:before {
+    content: "";
+    pointer-events: none;
+    position: absolute
+}
+.td-select:before {
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 2em
+}
+.td-select:after {
+    font-size: .625em;
+    line-height: 1;
+    margin-top: -.5em;
+    right: 1.2em;
+    color: #fff;
+    border: 3px solid #dadada;
+    border-top-width: 0;
+    border-left-width: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: inline-block
+}
+@media (max-width: 74.93em) {
+    .td-select {
+        border-width: 0 0 1px;
+        margin-left: .9375rem;
+        margin-right: 0
+    }
+    .mobile-android .td-select {
+        margin-right: .9375rem
+    }
+}
+.td-group-hover .td-select:after,
+.td-select:hover:after {
+    border-color: #00a221
+}
+.td-group-error .td-select:after {
+    border-color: #ae1100
+}
+.td-form-label,
+.td-form-label-visible {
+    display: block;
+    color: #1a5336;
+    padding-bottom: 5px;
+    padding-left: 2.5rem
+}
+@media only screen and (max-width: 74.93em) {
+    .td-form-label,
+    .td-form-label-visible {
+        padding-bottom: 0;
+        padding-left: .9375rem
+    }
+}
+.td-form-label {
+    visibility: hidden
+}
+.td-group-valid .td-form-label {
+    visibility: visible
+}
+.td-group-focus .form-control,
+.td-group-focus .input-group-addon,
+.td-group-focus .input-group-btn,
+.td-group-focus input,
+.td-group-focus.td-group-valid .form-control,
+.td-group-focus.td-group-valid .input-group-addon,
+.td-group-focus.td-group-valid .input-group-btn,
+.td-group-focus.td-group-valid input,
+.td-group-hover .form-control,
+.td-group-hover .input-group-addon,
+.td-group-hover .input-group-btn,
+.td-group-hover input,
+.td-group-hover.td-group-valid .form-control,
+.td-group-hover.td-group-valid .input-group-addon,
+.td-group-hover.td-group-valid .input-group-btn,
+.td-group-hover.td-group-valid input {
+    border-bottom-width: .125rem;
+    padding-bottom: .125rem;
+    border-bottom-color: #00a221;
+    outline: 0
+}
+.td-label.label-focused {
+    border-bottom: 1px solid #00a221
+}
+.td-error {
+    display: none;
+    clear: both;
+    position: relative;
+    overflow: visible;
+    color: #ae1100;
+    margin: 0
+}
+.td-group-error .form-control,
+.td-group-error .input-group-addon,
+.td-submitted .form-group.ng-invalid .form-control,
+.td-submitted .form-group.ng-invalid .input-group-addon {
+    border-style: solid;
+    border-bottom-color: #ae1100
+}
+.td-group-error .input-group.left input,
+.td-group-error .input-group.right input,
+.td-group-error.td-group-focus .input-group-addon,
+.td-group-error.td-group-hover .input-group-addon,
+.td-submitted .form-group.ng-invalid .input-group.left input,
+.td-submitted .form-group.ng-invalid .input-group.right input,
+.td-submitted .form-group.ng-invalid.td-group-focus .input-group-addon,
+.td-submitted .form-group.ng-invalid.td-group-hover .input-group-addon {
+    border-bottom: 2px solid #ae1100
+}
+.dynamic-help-wrapper,
+.td-callout-help {
+    z-index: 99;
+    clear: both;
+    position: relative;
+    overflow: visible;
+    background: 0 0
+}
+.dynamic-help {
+    display: none;
+    vertical-align: top;
+    z-index: 1;
+    padding: .625rem .625rem 0
+}
+.dynamic-help p,
+.td-callout-help p {
+    margin-bottom: 6px
+}
+.td-help {
+    display: none
+}
+.td-help .td-callout-content {
+    padding: .3125rem .5rem 0
+}
+.dynamic-help,
+.td-callout-help,
+.td-error {
+    font-size: 12.7px;
+    font-size: .79375rem
+}
+input.form-control.td-padding-03 {
+    padding: 3px;
+    height: auto
+}
+input.form-control.td-padding-06 {
+    padding: 6px;
+    height: auto
+}
+input.form-control.td-padding-12 {
+    padding: 12px;
+    height: auto
+}
+input.form-control.td-padding-18 {
+    padding: 18px;
+    height: auto
+}
+input.form-control.td-padding-24 {
+    padding: 24px;
+    height: auto
+}
+input.form-control.td-padding-30 {
+    padding: 30px;
+    height: auto
+}
+input.form-control.td-padding-36 {
+    padding: 36px;
+    height: auto
+}
+.td-form-header h1 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 0
+}
+.td-form-header p {
+    color: #1a5336;
+    font-weight: 300
+}
+.scrollable-wrap {
+    background-color: #fff
+}
+.scrollable-wrap .scrollable-doc {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 140px;
+    height: 8.75rem;
+    padding: 0 .625rem 1.25rem;
+    overflow: auto;
+    border: 1px solid #efeff4;
+    margin-top: 1px!important;
+    margin-bottom: 20px
+}
+.td-assistance-text {
+    font-weight: 700
+}
+@media (max-width: 64em) {
+    .td-assistance-text {
+        font-weight: 400;
+        color: #00a221;
+        font-size: 18px;
+        font-size: 1.125rem
+    }
+}
+@media (max-width: 74.93em) {
+    .td-help .td-callout-content {
+        padding: 5px 2px
+    }
+    .td-form .td-callout-white.td-xs-full-bleed-callout h2,
+    .td-form .td-callout-white.td-xs-full-bleed-callout h3,
+    .td-form .td-callout-white.td-xs-full-bleed-callout h4,
+    .td-form .td-callout-white.td-xs-full-bleed-callout h5,
+    .td-form .td-callout-white.td-xs-full-bleed-callout h6,
+    .td-form .td-callout-white.td-xs-full-bleed-callout input+label.card,
+    .td-form .td-callout-white.td-xs-full-bleed-callout legend,
+    .td-form .td-callout-white.td-xs-full-bleed-callout p {
+        margin-left: 8px
+    }
+}
+.form-control.ng-animate.ng-dirty.ng-invalid.ng-invalid-tv4-202,
+.form-control.ng-animate.ng-dirty.ng-invalid.ng-invalid-tv4-302 {
+    border-bottom: 2px solid #ae0101
+}
+.form-control.ng-animate.ng-dirty.ng-invalid.ng-invalid-tv4-202.ng-hover,
+.form-control.ng-animate.ng-dirty.ng-invalid.ng-invalid-tv4-202.ng-hover.ng-focus,
+.form-control.ng-animate.ng-dirty.ng-invalid.ng-invalid-tv4-302.ng-hover,
+.form-control.ng-animate.ng-dirty.ng-invalid.ng-invalid-tv4-302.ng-hover.ng-focus {
+    border-bottom: 2px solid #00a221
+}
+.td-form-label-visible {
+    margin-right: 0;
+    margin-left: 0
+}
+.form-group>label,
+.help-block {
+    padding-left: 0;
+    padding-right: 0
+}
+.form-control {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0
+}
+.icon-wraper {
+    position: relative
+}
+.icon-help {
+    width: 86%
+}
+.icon-help-img {
+    padding-top: 0;
+    position: absolute;
+    top: 15px;
+    left: 89%;
+    width: 20px
+}
+.icon-help-img .td-link-icon.td-link-icon-help {
+    margin-left: 0
+}
+.td-callout-help {
+    display: none
+}
+.td-select:after {
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-color: #1c1c1c;
+    top: 48%;
+    width: .5rem;
+    height: .5rem
+}
+.td-select:hover:after {
+    border-color: #00a221
+}
+.td-select.select-disabled:hover:after {
+    border-color: #1c1c1c
+}
+button {
+    word-break: initial!important
+}
+.with_icon .td-icon {
+    width: 30px;
+    display: block;
+    font-size: 18px;
+    color: #a9a9a9;
+    margin-top: 7px
+}
+.with_icon .td-icon.td-icon-faqs {
+    margin-top: 20px
+}
+.with_icon>div {
+    display: block;
+    overflow: hidden;
+    width: auto
+}
+.with_icon.left .td-icon {
+    float: left
+}
+.with_icon.right .td-icon {
+    margin-left: 5px;
+    float: right
+}
+.with_icon .td-icon-faqs {
+    font-size: 1.3rem
+}
+.td-callout.td-background-red {
+    color: #ae1100
+}
+.form-control:-moz-placeholder {
+    color: #767676;
+    opacity: 1
+}
+.form-control::-moz-placeholder {
+    color: #767676;
+    opacity: 1
+}
+.form-control:-ms-input-placeholder {
+    color: #767676;
+    opacity: 1
+}
+.form-control::-webkit-input-placeholder {
+    color: #767676;
+    opacity: 1
+}
+@media (max-width: 47.93em) {
+    .form-control {
+        border-right-width: 1px!important;
+        border-left-width: 1px!important
+    }
+}
+.radio-button-list {
+    margin-bottom: 40px
+}
+.radio-button-list>li {
+    margin-top: 60px;
+    font-size: 21px
+}
+.radio-button-list>li:first-child {
+    margin-top: 0
+}
+.radio-button-list>ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: -25px;
+    margin-top: 20px
+}
+.form-group label span {
+    font-size: 16px;
+    font-size: 1rem;
+    padding-left: 0;
+    padding-bottom: 10px;
+    color: #1c1c1c;
+    padding-right: 5px
+}
+.form-group label span~[td-modal] {
+    padding-left: 0
+}
+.form-group label>span+div>span {
+    float: left
+}
+.td-background-lightest-gray input[type=checkbox] {
+    background-color: #fff
+}
+.form-group {
+    padding-top: 10px;
+    padding-bottom: 15px
+}
+:-moz-ui-invalid:not(output) {
+    box-shadow: none!important
+}
+.form-control {
+    border-width: 1px;
+    height: 42px;
+    border-color: #dadada
+}
+.form-control:focus,
+.form-control:hover {
+    outline-width: 0!important;
+    outline-style: none!important
+}
+.td-sim-legend {
+    padding-top: 10px;
+    font-size: 16px;
+    font-size: 1rem;
+    padding-left: 0;
+    padding-bottom: 10px;
+    color: #1c1c1c;
+    display: block;
+    font-family: "Webly Sleek SemiLight", Helvetica-, droid sans, sans-serif;
+    margin-bottom: 0
+}
+.td-group-error .form-control,
+.td-group-error .input-group-addon,
+.td-submitted .form-group.ng-invalid .form-control,
+.td-submitted .form-group.ng-invalid .input-group-addon {
+    border-width: 1px 1px 2px
+}
+.td-form-stacked {
+    margin-bottom: 15px
+}
+.td-form-stacked .td-checkbox-div-wrapper {
+    margin-bottom: 0
+}
+.form-control.ng-invalid:not(.ng-pristine),
+.td-group-error .form-control,
+.td-group-error .input-group-addon,
+.td-submitted .form-group.ng-invalid .form-control,
+.td-submitted .form-group.ng-invalid .input-group-addon {
+    border-width: 1px 1px 2px;
+    border-bottom-color: #ae1100!important
+}
+.form-control.ng-invalid:not(.ng-pristine)[type=checkbox],
+.form-control.ng-invalid:not(.ng-pristine)[type=radio],
+.td-group-error .form-control[type=checkbox],
+.td-group-error .form-control[type=radio],
+.td-group-error .input-group-addon[type=checkbox],
+.td-group-error .input-group-addon[type=radio],
+.td-submitted .form-group.ng-invalid .form-control[type=checkbox],
+.td-submitted .form-group.ng-invalid .form-control[type=radio],
+.td-submitted .form-group.ng-invalid .input-group-addon[type=checkbox],
+.td-submitted .form-group.ng-invalid .input-group-addon[type=radio] {
+    border-width: 1px;
+    border-color: #ae1100!important;
+    background-color: #f7e8e9
+}
+.td-group-error .form-control:focus,
+.td-group-error .form-control:hover {
+    padding-bottom: 3px!important
+}
+.form-control.ng-valid {
+    border-width: 1px;
+    border-bottom-color: #dadada
+}
+.form-control .ng-valid-function-dirty.ng-valid {
+    border-bottom-color: #00a221
+}
+.form-control.ng-valid:focus,
+.form-control.ng-valid:hover {
+    border-bottom-color: #00a221;
+    border-bottom-width: 2px
+}
+input.ng-pristine.ng-valid.form-control:focus,
+input.ng-pristine.ng-valid.form-control:hover {
+    padding-bottom: 2px
+}
+.td-error {
+    padding: .25rem 0 .375rem
+}
+input.ng-invalid.ng-valid-parse:not([type=checkbox]):focus,
+input.ng-invalid.ng-valid-parse:not([type=checkbox]):focus:hover,
+input.ng-invalid.ng-valid-parse:not([type=checkbox]):hover {
+    padding-bottom: 3px!important
+}
+.form-group.td-inline-label {
+    display: flex;
+    align-items: center
+}
+.td-sim-dob>div:nth-child(1) {
+    padding-right: 0
+}
+.td-sim-dob>div:nth-child(1) input,
+.td-sim-dob>div:nth-child(1) select {
+    border-right: none
+}
+.td-sim-dob>div:nth-child(2) {
+    padding-right: 0;
+    padding-left: 0
+}
+.td-sim-dob>div:nth-child(3) {
+    padding-left: 0
+}
+.td-sim-dob>div:nth-child(3) input,
+.td-sim-dob>div:nth-child(3) select {
+    border-left: none
+}
+.td-sim-start-date>div:nth-child(1) {
+    padding-right: 0
+}
+.td-sim-start-date>div:nth-child(1) select {
+    border-right: none
+}
+.td-sim-start-date>div:nth-child(2) {
+    padding-left: 0
+}
+.td-sim-start-date label span {
+    margin-top: 0
+}
+.td-select option {
+    color: #616161
+}
+:focus {
+    outline: 0
+}
+::-moz-focus-inner {
+    border: 0;
+    outline: 0!important
+}
+.td-sim-dob .form-group,
+.td-sim-start-date .form-group {
+    padding-top: 0
+}
+.td-sim-dob .date-error {
+    margin-bottom: 10px
+}
+.td-sim-dob .date-error div {
+    position: absolute;
+    top: -10px
+}
+.td-select select.ng-pristine {
+    color: #616161
+}
+.td-select select.ng-pristine option {
+    font-style: normal
+}
+fieldset.td-radio-checkbox-inline.stacked {
+    margin-top: 10px
+}
+.td-radio-checkbox-inline input.checked+label.card.label-focused {
+    border-color: #d9ebd9;
+    border-style: dotted
+}
+@media (max-width: 47.93em) {
+    .td-field-title {
+        margin-bottom: 15px
+    }
+}
+.td-field-title legend {
+    font-family: "Webly Sleek SemiLight";
+    margin-bottom: 0;
+    color: #1c1c1c;
+    padding-top: 10px
+}
+@media (max-width: 47.93em) {
+    .td-field-title legend {
+        padding-bottom: 0
+    }
+}
+.td-field-title .td-dob-error {
+    float: left
+}
+@media (max-width: 47.93em) {
+    .td-field-title .mobile-dob {
+        margin-bottom: 0;
+        margin-top: 10px
+    }
+}
+.ng-invalid.invalid-required+.td-error {
+    display: block
+}
+.ng-invalid.invalid-required+.td-error>.msg-required {
+    display: block!important
+}
+.ng-invalid.invalid-number+.td-error {
+    display: block
+}
+.ng-invalid.invalid-number+.td-error>.msg-number {
+    display: block!important
+}
+.ng-invalid.invalid-number+.td-error>.msg-required {
+    display: none!important
+}
+.td-form-italic {
+    font-style: italic
+}
+.td-form-italic option {
+    font-style: normal
+}
+select:-moz-focusring {
+    color: transparent!important;
+    text-shadow: 0 0 0 #000!important
+}
+select:focus::-ms-value {
+    background-color: #fff;
+    color: #000
+}
+textarea {
+    padding-top: 6px!important
+}
+::-webkit-input-placeholder {
+    color: #767676
+}
+:-moz-placeholder {
+    color: #767676
+}
+::-moz-placeholder {
+    color: #767676
+}
+:-ms-input-placeholder {
+    color: #767676
+}
+.td-sim-error,
+.td-sim-section-error {
+    padding: 15px;
+    margin: 0
+}
+.form-control {
+    padding-left: 15px;
+    padding-right: 15px
+}
+@media (min-width: 48em) {
+    .form-control.td-input-xxs {
+        padding-left: 5px;
+        padding-right: 5px
+    }
+}
+@media (min-width: 75em) {
+    .form-control.td-input-xxs {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
+.td-select {
+    margin: 0
+}
+input[disabled]:hover,
+select[disabled]:hover,
+textarea[disabled]:hover {
+    border-color: #dadada;
+    border-bottom-width: 1px;
+    padding-bottom: 3px;
+    cursor: not-allowed
+}
+input[disabled]+label:before,
+select[disabled]+label:before,
+textarea[disabled]+label:before {
+    cursor: not-allowed
+}
+input[disabled]+label:before:hover,
+select[disabled]+label:before:hover,
+textarea[disabled]+label:before:hover {
+    cursor: not-allowed;
+    border-color: #dadada!important;
+    background-color: #f3f3f3!important
+}
+input[disabled]+label,
+select[disabled]+label,
+textarea[disabled]+label {
+    cursor: not-allowed
+}
+.td-select[disabled]:hover::after {
+    border-color: #dadada!important
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper:hover input[type=checkbox][disabled]+.card::before,
+.td-checkbox-div-wrapper .td-checkbox-wrapper:hover input[type=checkbox][disabled]+label::before,
+.td-checkbox-div-wrapper .td-checkbox-wrapper:hover input[type=radio][disabled]+.card::before,
+.td-checkbox-div-wrapper .td-checkbox-wrapper:hover input[type=radio][disabled]+label::before,
+input[disabled][type=checkbox]:hover,
+input[disabled][type=checkbox]:hover+label:before,
+input[disabled][type=radio]:hover,
+input[disabled][type=radio]:hover+label:before {
+    border-color: #dadada!important;
+    background-color: #f3f3f3!important
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]+.card::before,
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]+label::before,
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]+.card::before,
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]+label::before {
+    background-color: #fff
+}
+.currency-input,
+.percentage-input {
+    position: relative
+}
+.currency-input input,
+.currency-input-inline input,
+.percentage-input input,
+.percentage-input-inline input {
+    padding-left: 30px;
+    padding-right: 35px
+}
+.percentage-input input,
+.percentage-input-inline input {
+    text-align: right
+}
+.currency-input:before {
+    content: '$';
+    display: block;
+    position: absolute;
+    top: 52px;
+    left: 15px
+}
+.percentage-input:after {
+    content: '%';
+    display: block;
+    position: absolute;
+    top: 52px;
+    right: 15px
+}
+.label-elements {
+    margin-top: 10px
+}
+.percentage-input-inline .inline-elements:after {
+    content: '%';
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 30px
+}
+.currency-input-inline .inline-elements:before {
+    content: '$';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 30px
+}
+.td-form-icon {
+    display: inline!important;
+    top: 2px;
+    color: #00a221!important
+}
+.td-form-icon:focus {
+    outline: #1a5336 dotted thin
+}
+.toggle-container label.card {
+    margin-bottom: 0!important
+}
+input[type=checkbox],
+input[type=radio] {
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f3f3f3;
+    border: 1px solid #dadada!important;
+    padding: .5625rem!important;
+    display: inline-block;
+    position: relative;
+    vertical-align: text-bottom;
+    height: 0!important;
+    width: 0!important;
+    outline: 0;
+    cursor: pointer
+}
+.td-form-stacked input[type=checkbox],
+.td-form-stacked input[type=radio] {
+    float: left
+}
+input[type=checkbox].focused,
+input[type=checkbox].ng-focus,
+input[type=checkbox]:active,
+input[type=checkbox]:focus,
+input[type=checkbox]:hover,
+input[type=radio].focused,
+input[type=radio].ng-focus,
+input[type=radio]:active,
+input[type=radio]:focus,
+input[type=radio]:hover {
+    border-color: #00a221!important;
+    background-color: #fff;
+    outline: 0
+}
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+    color: #00a221;
+    background-color: #fff;
+    background-image: url(data:image/gif;base64,R0lGODlhEgASAKIHAPT+9ji3wpfd/PfZkgWiSEmiK8a3Sv///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEI2NzlGQUY0NEVCMTFFNUJBREFCQjM3NUM0NUZGREIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEI2NzlGQjA0NEVCMTFFNUJBREFCQjM3NUM0NUZGREIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowQjY3OUZBRDQ0RUIxMUU1QkFEQUJCMzc1QzQ1RkZEQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowQjY3OUZBRTQ0RUIxMUU1QkFEQUJCMzc1QzQ1RkZEQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAEAAAcALAAAAAASABIAAAMqeLrc/jDKSasEpoiKya6GZw1FAHDhCYoVaUpu90UkEZQqXBAsFb6WYDABADs=);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+input[type=checkbox].ng-error,
+input[type=radio].ng-error {
+    border-color: #ae1100!important
+}
+input[type=checkbox]+.card,
+input[type=radio]+.card {
+    text-align: left;
+    color: #1c1c1c;
+    cursor: pointer;
+    padding: 0;
+    display: table-cell;
+    margin-right: 32px;
+    vertical-align: middle
+}
+.td-form-stacked input[type=checkbox]+.card,
+.td-form-stacked input[type=radio]+.card {
+    margin-bottom: 20px
+}
+.td-form-compact input[type=checkbox]+.card,
+.td-form-compact input[type=radio]+.card,
+.td-form-stacked input[type=checkbox]+.card:last-child,
+.td-form-stacked input[type=radio]+.card:last-child {
+    margin-bottom: 0
+}
+.td-checkbox-div-wrapper input[type=checkbox],
+.td-checkbox-div-wrapper input[type=radio] {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto
+}
+.td-checkbox-div-wrapper label {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 35px
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper {
+    display: table;
+    min-height: 40px;
+    position: relative;
+    width: 100%
+}
+.td-checkbox-div-wrapper.inline {
+    display: inline-block;
+    margin-right: 15px
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper.td-checkbox-wrapper-right {
+    margin-left: 0;
+    padding-right: 40px;
+    padding-left: 0
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper.td-checkbox-wrapper-right .card {
+    padding-left: 0
+}
+input[type=radio] {
+    border-radius: 50%
+}
+div[class*=' td-row-divide'] label.td-label,
+div[class*='td-row-divide '] label.td-label,
+div[class^=td-row-divide] label.td-label {
+    margin-right: -6px;
+    position: relative;
+    z-index: 1
+}
+.form-group.td-checkbox-div-wrapper {
+    display: block;
+    padding-top: .625rem
+}
+.form-group.td-checkbox-div-wrapper .td-checkbox-wrapper {
+    margin-top: 3px
+}
+.form-group.td-checkbox-div-wrapper.inline {
+    float: left;
+    margin-right: -70px
+}
+.form-group.td-checkbox-div-wrapper.inline:last-child {
+    margin-right: 0
+}
+.form-group.td-checkbox-div-wrapper>label {
+    border-bottom: 1px solid #dadada;
+    min-height: 28px;
+    display: block;
+    padding: 0 10px 10px;
+    margin-left: 2.1875rem;
+    margin-right: 2.1875rem
+}
+@media (max-width: 74.93em) {
+    .form-group.td-checkbox-div-wrapper>label {
+        margin-left: .9375rem;
+        margin-right: 0;
+        padding-left: 0
+    }
+}
+.form-group.td-checkbox-div-wrapper>label>span {
+    padding-left: 10px
+}
+.form-group.td-checkbox-div-wrapper.td-ui-align-toggle-right>label span {
+    margin-right: 55px;
+    padding-left: 10px
+}
+@media all and (-ms-high-contrast: none) {
+    ::-ms-check {
+        display: none
+    }
+    .td-checkbox-div-wrapper input[type=checkbox]::-ms-check,
+    ::-ms-backdrop {
+        display: block!important;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #dadada;
+        background-color: #fff;
+        border-color: #00a221!important
+    }
+    .td-checkbox-div-wrapper:hover input[type=checkbox]::-ms-check,
+    ::-ms-backdrop {
+        border-color: #00a221!important;
+        background-color: #f3f3f3;
+        outline: 0
+    }
+    .td-checkbox-div-wrapper input[type=checkbox]:focus::-ms-check,
+    ::-ms-backdrop {
+        border-color: #00a221!important;
+        background-color: #fff;
+        outline: 0
+    }
+    .td-checkbox-div-wrapper input[type=checkbox]:checked,
+    ::-ms-backdrop {
+        background-size: auto
+    }
+    ::-ms-backdrop,
+    input[type=checkbox] {
+        width: auto!important;
+        height: auto!important
+    }
+    .td-checkbox-div-wrapper input[type=radio]::-ms-check,
+    ::-ms-backdrop {
+        display: block!important;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border: 1px solid #00a221
+    }
+    .td-checkbox-div-wrapper:hover input[type=radio]::-ms-check,
+    ::-ms-backdrop {
+        outline: 0;
+        background-color: #f3f3f3;
+        border-color: #00a221!important
+    }
+    .td-checkbox-div-wrapper input[type=radio]:focus::-ms-check,
+    ::-ms-backdrop {
+        border-color: #00a221!important;
+        background-color: #fff;
+        outline: 0
+    }
+    .td-checkbox-div-wrapper input[type=radio]:checked::-ms-check,
+    ::-ms-backdrop {
+        background-color: transparent;
+        color: transparent;
+        border-color: #00a221!important;
+        -webkit-box-shadow: inset 0 0 0 5px #00a221;
+        -moz-box-shadow: inset 0 0 0 5px #00a221;
+        box-shadow: inset 0 0 0 5px #00a221
+    }
+    .td-checkbox-div-wrapper input[type=radio]:checked,
+    ::-ms-backdrop {
+        background-size: auto
+    }
+    ::-ms-backdrop,
+    input[type=radio] {
+        width: auto!important;
+        height: auto!important
+    }
+}
+@-moz-document url-prefix() {
+    .td-checkbox-div-wrapper .td-checkbox-wrapper {
+        height: 40px
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox],
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio] {
+        posiotion: fixed;
+        left: -10000px
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]+label::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]+label::before {
+        border: 1px solid #dadada;
+        content: "";
+        display: block;
+        height: 20px;
+        left: 10px;
+        position: absolute;
+        top: 10px;
+        width: 20px;
+        transition: border-color 300ms ease-in-out
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:focus+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:focus+label::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:focus+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:focus+label::before {
+        border: 1px solid #00a221;
+        background-color: #fff
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]+label::before {
+        border-radius: 50%
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper:hover input[type=checkbox]+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper:hover input[type=checkbox]+label::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper:hover input[type=radio]+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper:hover input[type=radio]+label::before {
+        border: 1px solid #00a221;
+        background-color: #fff
+    }
+}
+.td-radio-checkbox-inline.spaced,
+.td-radio-checkbox-inline.stacked {
+    margin-top: 5px
+}
+.td-radio-checkbox-inline.spaced input[type=checkbox],
+.td-radio-checkbox-inline.spaced input[type=radio],
+.td-radio-checkbox-inline.stacked input[type=checkbox],
+.td-radio-checkbox-inline.stacked input[type=radio] {
+    margin: 4px 0 0;
+    line-height: normal;
+    position: absolute!important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0, 0 0, 0 0, 0 0);
+    top: 0;
+    left: 0
+}
+.td-radio-checkbox-inline.stacked {
+    width: 100%
+}
+fieldset[disabled] input[type=checkbox],
+fieldset[disabled] input[type=radio],
+input[type=checkbox][disabled],
+input[type=radio][disabled] {
+    cursor: not-allowed
+}
+input[type=checkbox]+label.card.label-focused span.td-label-check,
+input[type=checkbox].focused,
+input[type=radio]+label.card.label-focused span.td-label-check,
+input[type=radio].focused {
+    border: 1px solid #00a221;
+    background-color: #fff
+}
+input[type=checkbox].td-nostyle,
+input[type=radio].td-nostyle {
+    left: auto;
+    position: inherit;
+    z-index: auto
+}
+.td-radio-checkbox-inline.spaced {
+    width: 100%;
+    padding: 0
+}
+.td-radio-checkbox-inline.spaced input+label.card:not(:last-child) {
+    margin-right: 20px
+}
+@media (max-width: 47.93em) {
+    .td-radio-checkbox-inline.spaced {
+        display: block
+    }
+}
+.td-radio-checkbox-inline {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    word-break: keep-all
+}
+.td-radio-checkbox-inline input+label.card {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    background: #fff;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #048403;
+    padding: 5px 30px 7px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none
+}
+.td-radio-checkbox-inline input+label.card:not(.label-checked):focus,
+.td-radio-checkbox-inline input+label.card:not(.label-checked):hover {
+    outline: 0;
+    background-color: #d9ebd9
+}
+.td-radio-checkbox-inline input+label.card:not(input.checked) .label-checked.active,
+.td-radio-checkbox-inline input+label.card:not(input.checked) .label-checked:focus,
+.td-radio-checkbox-inline input+label.card:not(input.checked) .label-checked:hover {
+    z-index: 2;
+    border: 1px solid #048403;
+    color: #1c1c1c;
+    background-color: #048403
+}
+.td-radio-checkbox-inline input.focused+label.card {
+    outline: 0;
+    background-color: #d9ebd9
+}
+.td-radio-checkbox-inline input.checked+label.card {
+    background-color: #048403;
+    border-color: #048403;
+    color: #fff
+}
+.td-radio-checkbox-inline.stacked input+label.card+.td-radio-checkbox-inline,
+.td-radio-checkbox-inline.stacked input+label.card+input+label.card {
+    margin-left: -1px
+}
+.td-radio-checkbox-inline.stacked input+label.card:not(:first-child):not(:last-child):not(.first-label) {
+    border-radius: 0
+}
+.td-radio-checkbox-inline.stacked input+label.card:last-child:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0
+}
+.td-radio-checkbox-inline.stacked input+label.card.first-label {
+    border-radius: 4px 0 0 4px
+}
+@media (max-width: 47.93em) {
+    .td-radio-checkbox-inline.stacked {
+        display: block
+    }
+    .td-radio-checkbox-inline.stacked input+label.card {
+        border-radius: 4px;
+        margin-bottom: 5px;
+        -ms-word-break: keep-all;
+        word-break: keep-all;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto
+    }
+}
+.td-radio-checkbox-group .td-label,
+.td-radio-checkbox-inline input+label.card .td-form-stacked input+label.card {
+    cursor: pointer
+}
+.td-form-stacked legend {
+    font-size: 18px;
+    font-size: 1.125rem;
+    height: 37px;
+    height: 2.3125rem;
+    padding-top: .5rem;
+    cursor: pointer
+}
+.td-form-stacked input+label.card {
+    text-align: left;
+    color: #1c1c1c;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 10px
+}
+.td-form-stacked.inline input+label.card {
+    display: inline-block;
+    float: left;
+    margin-right: 32px
+}
+.td-form-stacked .td-label-content-wrapper {
+    padding: .1875rem 0;
+    display: inline-table
+}
+.td-form-stacked .td-label-content {
+    padding: 0 0 .125rem .625rem;
+    width: auto;
+    display: table-cell;
+    vertical-align: middle
+}
+.td-form-stacked.inline .td-label-content {
+    display: inline-block
+}
+.td-form-stacked input+label .td-label-check {
+    display: block;
+    vertical-align: middle;
+    border: 1px solid #dadada;
+    background: #f5f5f5;
+    margin-top: 2px;
+    width: 20px;
+    width: 1.25rem;
+    height: 20px;
+    height: 1.25rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    text-align: center;
+    float: left
+}
+.td-form-stacked input+label .td-label-check:active {
+    background: #fff
+}
+.td-form-stacked input+label .td-label-check+label.card.label-focused span.td-label-check,
+.td-form-stacked input+label .td-label-check:focus,
+.td-form-stacked input+label .td-label-check:hover {
+    border: 1px solid #00a221;
+    background: #fff
+}
+.td-form-stacked input+label.label-checked .td-label-check {
+    background: #fff
+}
+.td-form-stacked input[type=radio]+label .td-label-check {
+    border-radius: 50%
+}
+.td-form-stacked input[type=radio].checked+label.label-checked .td-label-check:after {
+    content: '';
+    background-color: #048403;
+    display: block;
+    border-radius: 48%;
+    height: 12px;
+    margin: 3px;
+    width: 12px
+}
+@media (max-width: 64em) {
+    .td-form-stacked.inline input+label.card {
+        display: block;
+        float: none;
+        margin-right: 32px
+    }
+}
+label.td-label .td-label-content {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: auto;
+    line-height: 35px;
+    padding: 0 0 .375rem;
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #1a5336
+}
+label.td-label .td-label-checkbox,
+label.td-label .td-label-radio {
+    display: block;
+    width: 17px;
+    width: 1.0625rem;
+    height: 17px;
+    height: 1.0625rem;
+    line-height: 35px;
+    line-height: 2.1875rem;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+    float: right
+}
+label.td-label .td-label-radio {
+    border-radius: 50%
+}
+label.td-label.label-checked .td-label-checkbox,
+label.td-label.label-checked .td-label-radio {
+    border: none;
+    background-color: #00a221
+}
+label.td-label .td-label-content {
+    display: table-cell;
+    vertical-align: middle;
+    word-wrap: break-word
+}
+label.td-label .td-label-content-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%
+}
+label.td-label.td-callout {
+    margin-bottom: 0
+}
+label.td-label.td-callout:focus,
+label.td-label.td-callout:hover {
+    border-bottom: 1px solid #00a221
+}
+label.td-label .td-callout-content,
+label.td-label .td-callout-heading {
+    display: block
+}
+label.td-label .td-label-content-wrapper {
+    padding-top: .625rem
+}
+.td-radio-checkbox-error .td-callout {
+    border-bottom: 1px solid #ae0101!important
+}
+.td-radio-checkbox-error input+label .td-label-check {
+    border: 1px solid #ae0101
+}
+.td-row-divide-2 label.td-label {
+    width: 50%
+}
+.td-row-divide-3 label.td-label {
+    width: 33.34%
+}
+.td-row-divide-4 label.td-label {
+    width: 25%
+}
+.td-row-divide-5 label.td-label {
+    width: 20%
+}
+.td-row-divide-6 label.td-label {
+    width: 16.78%
+}
+.td-row-divide-7 label.td-label {
+    width: 14.29%
+}
+.td-row-divide-8 label.td-label {
+    width: 12.5%
+}
+.td-row-divide-9 label.td-label {
+    width: 11.12%
+}
+.td-row-divide-10 label.td-label {
+    width: 10%
+}
+.td-row-divide-11 label.td-label {
+    width: 9.1%
+}
+.td-row-divide-12 label.td-label {
+    width: 8.43%
+}
+.td-row-divide-13 label.td-label {
+    width: 7.7%
+}
+.td-row-divide-14 label.td-label {
+    width: 7.15%
+}
+.td-row-divide-15 label.td-label {
+    width: 6.7%
+}
+div[class*=' td-row-divide'] label.td-label,
+div[class^=td-row-divide] label.td-label {
+    margin-right: -6px;
+    position: relative;
+    z-index: 1
+}
+@media (max-width: 47.93em) {
+    .td-radio-checkbox-inline.spaced label.card {
+        width: 100%!important
+    }
+}
+.td-sim-select-stacked.first-label {
+    border-radius: 4px 0 0 4px!important;
+    margin-right: 0!important;
+    border-right: none!important
+}
+.td-sim-select-stacked.second-label {
+    margin-right: 0!important
+}
+input[type=checkbox]:not([disabled]),
+input[type=radio]:not([disabled]) {
+    background: #fff;
+    border-color: #00a221!important
+}
+.ng-submitted input[type=checkbox].ng-invalid,
+.ng-submitted input[type=radio].ng-invalid {
+    background: #f7e8e9;
+    border-color: #ae1100!important
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:checked+.card::before,
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:checked+label::before,
+input[type=radio]:checked {
+    -webkit-box-shadow: inset 0 0 0 4px #00a221;
+    -moz-box-shadow: inset 0 0 0 4px #00a221;
+    box-shadow: inset 0 0 0 4px #00a221;
+    border-color: #00a221!important;
+    background-image: none
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:checked+.card::before:focus,
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:checked+label::before:focus,
+input[type=radio]:checked:focus {
+    border: none
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:checked+.card::before,
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:checked+label::before,
+input[type=checkbox]:checked {
+    background-color: #00a221;
+    border-color: #00a221!important;
+    background-image: url(../img/forms/checkmark.svg);
+    background-size: 18px 18px
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:checked+.card::before:hover,
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:checked+label::before:hover,
+input[type=checkbox]:checked:hover {
+    background-color: #00a221
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox].ng-invalid+.card::before:hover,
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox].ng-invalid+label::before:hover,
+input[type=checkbox].ng-invalid:hover {
+    background-color: #fff!important
+}
+input[type=checkbox]:checked:after {
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    padding-left: 3px;
+    padding-top: 1px
+}
+input[type=checkbox]:hover,
+input[type=radio]:hover {
+    background-color: #f3f3f3
+}
+input[type=checkbox].clicked,
+input[type=radio].clicked {
+    border-color: #00a221!important;
+    outline: 0!important
+}
+input[type=checkbox]:focus:not(.clicked),
+input[type=radio]:focus:not(.clicked) {
+    padding-bottom: 9px!important;
+    outline: #999 dotted 1px!important
+}
+input[type=radio]:checked:hover {
+    background-color: #fff
+}
+input[type=checkbox].checked.ng-valid:hover {
+    background-color: #00a221
+}
+@-moz-document url-prefix() {
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]+.card::before, .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]+label::before, .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]+.card::before, .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]+label::before {
+        border-color: #00a221!important
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:disabled+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:disabled+label::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:disabled+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:disabled+label::before {
+        border-color: #dadada!important;
+        background-color: #f3f3f3
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:hover+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:hover+label::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:hover+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:hover+label::before {
+        background-color: #f3f3f3
+    }
+    .ng-submitted .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox].ng-invalid+.card::before,
+    .ng-submitted .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio].ng-invalid+.card::before,
+    .ng-submitted .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio].ng-invalid+label::before,
+    .ng-submitted .td-checkbox-wrapper input[type=checkbox].ng-invalid+label::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox].ng-invalid:not(.ng-pristine)+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio].ng-invalid:not(.ng-pristine)+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio].ng-invalid:not(.ng-pristine)+label::before,
+    .td-checkbox-wrapper input[type=checkbox].ng-invalid:not(.ng-pristine)+label::before {
+        background: #f7e8e9;
+        border-color: #ae1100!important
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:focus:not(.clicked)+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:focus:not(.clicked)+label::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:focus:not(.clicked)+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio]:focus:not(.clicked)+label::before {
+        outline: #999 dotted 1px
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox].clicked+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox].clicked+label::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio].clicked+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=radio].clicked+label::before {
+        outline: 0
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:checked+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:checked+label::before {
+        background-image: url(../img/forms/checkmark.svg);
+        background-size: 18px 15px;
+        background-position: 0 2px
+    }
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:checked:hover+.card::before,
+    .td-checkbox-div-wrapper .td-checkbox-wrapper input[type=checkbox]:checked:hover+label::before {
+        background-color: #00a221!important
+    }
+}
+@media all and (-ms-high-contrast: none) {
+    ::-ms-check {
+        display: none
+    }
+    .td-checkbox-wrapper input[type=checkbox].ng-invalid:not(.ng-pristine)::-ms-check,
+    ::-ms-backdrop {
+        background: #f7e8e9;
+        border-color: #ae1100!important
+    }
+    .ng-submitted .td-checkbox-wrapper input[type=checkbox].ng-invalid::-ms-check,
+    ::-ms-backdrop {
+        background: #f7e8e9;
+        border-color: #ae1100!important
+    }
+    .td-checkbox-div-wrapper input[type=checkbox]:focus:not(.clicked),
+    ::-ms-backdrop {
+        outline: #999 dotted 1px!important
+    }
+    .td-checkbox-div-wrapper input[type=checkbox].clicked::-ms-check,
+    ::-ms-backdrop {
+        outline: 0!important
+    }
+    .td-checkbox-div-wrapper input[type=checkbox]:checked::-ms-check,
+    ::-ms-backdrop {
+        background-image: url(../img/forms/checkmark.svg);
+        background-size: 18px 15px;
+        background-position: 2px 3px;
+        color: transparent;
+        background-color: #00a221!important;
+        border-color: #00a221!important
+    }
+    ::-ms-backdrop,
+    input[type=checkbox] {
+        width: auto!important;
+        height: auto!important
+    }
+    .td-checkbox-div-wrapper input[type=checkbox]:disabled::-ms-check,
+    ::-ms-backdrop {
+        background-color: #f3f3f3!important;
+        border-color: #dadada!important
+    }
+    .td-checkbox-div-wrapper input[type=radio].ng-invalid.ng-dirty::-ms-check,
+    ::-ms-backdrop {
+        border-width: 1px;
+        border-color: #ae1100!important;
+        background-color: #f7e8e9
+    }
+    .td-checkbox-div-wrapper:hover input[type=radio]::-ms-check,
+    ::-ms-backdrop {
+        background-color: #f3f3f3;
+        border-color: #00a221!important
+    }
+    .td-checkbox-div-wrapper input[type=radio]:disabled::-ms-check,
+    ::-ms-backdrop {
+        background-color: #f3f3f3!important;
+        border-color: #dadada!important
+    }
+    .td-checkbox-div-wrapper input[type=radio]:focus:not(.clicked),
+    ::-ms-backdrop {
+        outline: #999 dotted 1px!important
+    }
+    .td-checkbox-div-wrapper input[type=radio].clicked::-ms-check,
+    ::-ms-backdrop {
+        outline: 0
+    }
+}
+input[type=checkbox]:active,
+input[type=radio]:active {
+    outline: 0!important
+}
+.td-radio-checkbox-inline.spaced input[type=checkbox]+.card,
+.td-radio-checkbox-inline.spaced input[type=radio]+.card,
+.td-radio-checkbox-inline.stacked input[type=checkbox]+.card,
+.td-radio-checkbox-inline.stacked input[type=radio]+.card {
+    margin-right: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.td-radio-checkbox-inline.spaced label.td-sim-select-stacked,
+.td-radio-checkbox-inline.stacked label.td-sim-select-stacked {
+    width: 50%
+}
+.td-radio-checkbox-inline.spaced input[type=checkbox].disabled+.card,
+.td-radio-checkbox-inline.spaced input[type=radio].disabled+.card,
+.td-radio-checkbox-inline.stacked input[type=checkbox].disabled+.card,
+.td-radio-checkbox-inline.stacked input[type=radio].disabled+.card {
+    color: #c1c1c1;
+    background-color: #fafafd;
+    border-color: #dadada
+}
+.td-radio-checkbox-inline.spaced input[type=checkbox].disabled+.card:hover,
+.td-radio-checkbox-inline.spaced input[type=radio].disabled+.card:hover,
+.td-radio-checkbox-inline.stacked input[type=checkbox].disabled+.card:hover,
+.td-radio-checkbox-inline.stacked input[type=radio].disabled+.card:hover {
+    cursor: default
+}
+.td-radio-checkbox-inline input:focus+label.card:not(.label-checked) {
+    background-color: #d9ebd9
+}
+.td-radio-checkbox-inline input.checked+label.card:not(.label-checked):focus,
+.td-radio-checkbox-inline input.checked+label.card:not(.label-checked):hover {
+    background-color: #048403
+}
+.td-radio-checkbox-inline input.clicked.checked+label.card,
+.td-radio-checkbox-inline input.clicked.checked+label.card:hover {
+    outline: 0;
+    border-top: none!important;
+    border-left: none!important;
+    border-bottom: none!important;
+    border-right: none!important
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper {
+    padding-left: 40px;
+    paadding-left: 1.875rem
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper .error-checkbox:not(:checked) {
+    border-bottom-width: 3px!important;
+    border-bottom-color: #831000!important
+}
+.td-checkbox-div-wrapper .td-checkbox-wrapper .td-error {
+    padding-top: 0
+}
+input[type=checkbox]+.card {
+    color: #555
+}
+.toggle+label {
+    height: 34px
+}
+.td-progress-indicator {
+    display: table;
+    width: 100%;
+    padding-bottom: 15px
+}
+.td-progress-indicator .td-progress-indicator-steps {
+    display: table-row;
+    list-style: none;
+    white-space: nowrap;
+    padding: 0
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+    text-align: right;
+    display: table-cell;
+    counter-increment: step
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step[data-ng-click]:hover,
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step[ng-click]:hover {
+    cursor: pointer
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active[data-ng-click]:hover,
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active[ng-click]:hover,
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active[tabindex]:hover {
+    cursor: default
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active[data-ng-click]:focus,
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active[ng-click]:focus,
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active[tabindex]:focus {
+    outline: 0
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active .td-progress-indicator-step-label {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #616161
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active .td-progress-indicator-step-text-wrapper,
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active:after {
+    background-color: #00a221
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-disabled .td-progress-indicator-step-text-wrapper,
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-disabled:after {
+    background-color: #a9a9a9
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:after {
+    content: "";
+    background-color: #1a5336;
+    height: 3px;
+    display: block;
+    margin-top: -12px
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: 15px
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: none
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:before {
+    display: block
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step .td-progress-indicator-step-text-wrapper {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    z-index: 10;
+    background-color: #1a5336;
+    border-radius: 7.5px
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step .td-progress-indicator-step-label,
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step .td-progress-indicator-step-text-wrapper .td-progress-indicator-step-text {
+    display: none
+}
+@media all and (-ms-high-contrast: none) {
+    [class^=td-progress-indicator-].td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        width: auto
+    }
+    [class^=td-progress-indicator-].td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-text-wrapper {
+        display: inline-flex
+    }
+}
+@media (min-width: 47.93em) {
+    [class^=td-progress-indicator-].td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        color: #616161;
+        text-align: center;
+        white-space: nowrap
+    }
+}
+.td-progress-indicator-2.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: auto
+}
+.td-progress-indicator-2.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: block
+}
+@media (min-width: 47.93em) {
+    .td-progress-indicator-2.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        line-height: inherit
+    }
+    .td-progress-indicator-2.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        width: 33.33333%!important
+    }
+    .td-progress-indicator-2.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(1)>.td-progress-indicator-step-label {
+        left: 16.66667%
+    }
+    .td-progress-indicator-2.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(2)>.td-progress-indicator-step-label {
+        left: 50%
+    }
+}
+.td-progress-indicator-3.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: auto
+}
+.td-progress-indicator-3.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: block
+}
+@media (min-width: 47.93em) {
+    .td-progress-indicator-3.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        line-height: inherit
+    }
+    .td-progress-indicator-3.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        width: 25%!important
+    }
+    .td-progress-indicator-3.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(1)>.td-progress-indicator-step-label {
+        left: 12.5%
+    }
+    .td-progress-indicator-3.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(2)>.td-progress-indicator-step-label {
+        left: 37.5%
+    }
+    .td-progress-indicator-3.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(3)>.td-progress-indicator-step-label {
+        left: 62.5%
+    }
+}
+.td-progress-indicator-4.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: auto
+}
+.td-progress-indicator-4.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: block
+}
+@media (min-width: 47.93em) {
+    .td-progress-indicator-4.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        line-height: inherit
+    }
+    .td-progress-indicator-4.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        width: 20%!important
+    }
+    .td-progress-indicator-4.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(1)>.td-progress-indicator-step-label {
+        left: 10%
+    }
+    .td-progress-indicator-4.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(2)>.td-progress-indicator-step-label {
+        left: 30%
+    }
+    .td-progress-indicator-4.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(3)>.td-progress-indicator-step-label {
+        left: 50%
+    }
+    .td-progress-indicator-4.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(4)>.td-progress-indicator-step-label {
+        left: 70%
+    }
+}
+.td-progress-indicator-5.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: auto
+}
+.td-progress-indicator-5.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: block
+}
+@media (min-width: 47.93em) {
+    .td-progress-indicator-5.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        line-height: inherit
+    }
+    .td-progress-indicator-5.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        width: 16.66667%!important
+    }
+    .td-progress-indicator-5.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(1)>.td-progress-indicator-step-label {
+        left: 8.33333%
+    }
+    .td-progress-indicator-5.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(2)>.td-progress-indicator-step-label {
+        left: 25%
+    }
+    .td-progress-indicator-5.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(3)>.td-progress-indicator-step-label {
+        left: 41.66667%
+    }
+    .td-progress-indicator-5.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(4)>.td-progress-indicator-step-label {
+        left: 58.33333%
+    }
+    .td-progress-indicator-5.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(5)>.td-progress-indicator-step-label {
+        left: 75%
+    }
+}
+.td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: auto
+}
+.td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: block
+}
+@media (min-width: 47.93em) {
+    .td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        line-height: inherit
+    }
+    .td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        width: 14.28571%!important
+    }
+    .td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(1)>.td-progress-indicator-step-label {
+        left: 7.14286%
+    }
+    .td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(2)>.td-progress-indicator-step-label {
+        left: 21.42857%
+    }
+    .td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(3)>.td-progress-indicator-step-label {
+        left: 35.71429%
+    }
+    .td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(4)>.td-progress-indicator-step-label {
+        left: 50%
+    }
+    .td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(5)>.td-progress-indicator-step-label {
+        left: 64.28571%
+    }
+    .td-progress-indicator-6.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(6)>.td-progress-indicator-step-label {
+        left: 78.57143%
+    }
+}
+.td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: auto
+}
+.td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: block
+}
+@media (min-width: 47.93em) {
+    .td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        line-height: inherit
+    }
+    .td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        width: 12.5%!important
+    }
+    .td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(1)>.td-progress-indicator-step-label {
+        left: 6.25%
+    }
+    .td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(2)>.td-progress-indicator-step-label {
+        left: 18.75%
+    }
+    .td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(3)>.td-progress-indicator-step-label {
+        left: 31.25%
+    }
+    .td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(4)>.td-progress-indicator-step-label {
+        left: 43.75%
+    }
+    .td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(5)>.td-progress-indicator-step-label {
+        left: 56.25%
+    }
+    .td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(6)>.td-progress-indicator-step-label {
+        left: 68.75%
+    }
+    .td-progress-indicator-7.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(7)>.td-progress-indicator-step-label {
+        left: 81.25%
+    }
+}
+.td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: auto
+}
+.td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: block
+}
+@media (min-width: 47.93em) {
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        line-height: inherit
+    }
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        width: 11.11111%!important
+    }
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(1)>.td-progress-indicator-step-label {
+        left: 5.55556%
+    }
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(2)>.td-progress-indicator-step-label {
+        left: 16.66667%
+    }
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(3)>.td-progress-indicator-step-label {
+        left: 27.77778%
+    }
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(4)>.td-progress-indicator-step-label {
+        left: 38.88889%
+    }
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(5)>.td-progress-indicator-step-label {
+        left: 50%
+    }
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(6)>.td-progress-indicator-step-label {
+        left: 61.11111%
+    }
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(7)>.td-progress-indicator-step-label {
+        left: 72.22222%
+    }
+    .td-progress-indicator-8.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(8)>.td-progress-indicator-step-label {
+        left: 83.33333%
+    }
+}
+.td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: auto
+}
+.td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: block
+}
+@media (min-width: 47.93em) {
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        line-height: inherit
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        width: 10%!important
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(1)>.td-progress-indicator-step-label {
+        left: 5%
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(2)>.td-progress-indicator-step-label {
+        left: 15%
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(3)>.td-progress-indicator-step-label {
+        left: 25%
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(4)>.td-progress-indicator-step-label {
+        left: 35%
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(5)>.td-progress-indicator-step-label {
+        left: 45%
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(6)>.td-progress-indicator-step-label {
+        left: 55%
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(7)>.td-progress-indicator-step-label {
+        left: 65%
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(8)>.td-progress-indicator-step-label {
+        left: 75%
+    }
+    .td-progress-indicator-9.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(9)>.td-progress-indicator-step-label {
+        left: 85%
+    }
+}
+.td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child {
+    width: auto
+}
+.td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:first-child:after {
+    display: block
+}
+@media (min-width: 47.93em) {
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step {
+        line-height: inherit
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step>.td-progress-indicator-step-label {
+        width: 9.09091%!important
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(1)>.td-progress-indicator-step-label {
+        left: 4.54545%
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(2)>.td-progress-indicator-step-label {
+        left: 13.63636%
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(3)>.td-progress-indicator-step-label {
+        left: 22.72727%
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(4)>.td-progress-indicator-step-label {
+        left: 31.81818%
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(5)>.td-progress-indicator-step-label {
+        left: 40.90909%
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(6)>.td-progress-indicator-step-label {
+        left: 50%
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(7)>.td-progress-indicator-step-label {
+        left: 59.09091%
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(8)>.td-progress-indicator-step-label {
+        left: 68.18182%
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(9)>.td-progress-indicator-step-label {
+        left: 77.27273%
+    }
+    .td-progress-indicator-10.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:nth-child(10)>.td-progress-indicator-step-label {
+        left: 86.36364%
+    }
+}
+.td-sim-progress .td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active .td-progress-indicator-step-text-wrapper,
+.td-sim-progress .td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active:after {
+    background-color: #008a00
+}
+.td-sim-progress .td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step:after {
+    background-color: #1a5336;
+    margin-right: 1px;
+    height: 13px;
+    margin-top: 0
+}
+.td-sim-progress .td-icon {
+    color: #797979
+}
+@media (min-width: 48em) {
+    .td-sim-progress .icon-name,
+    .td-sim-progress .td-icon {
+        display: inline-block!important;
+        height: 100%;
+        vertical-align: middle
+    }
+}
+.td-sim-progress .td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-disabled:after {
+    background-color: #ccc
+}
+.td-sim-progress .td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step .td-progress-indicator-step-text-wrapper {
+    display: none
+}
+.td-sim-progress .td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-disabled {
+    height: 13px;
+    background: #767676
+}
+.td-sim-progress .td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-disabled:last-child {
+    background-color: #fff
+}
+.progress-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+.progress-wrapper .progress-bar-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 29px;
+    font-size: 1.8125rem
+}
+@media (max-width: 47.93em) {
+    .td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active .td-progress-indicator-step-label {
+        display: none
+    }
+}
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active .td-progress-indicator-step-text-wrapper,
+.td-progress-indicator .td-progress-indicator-steps .td-progress-indicator-step.td-progress-indicator-step-active::after {
+    background-color: #1a5336
+}
+.custom_scroll_parent_div {
+    background-color: #fff;
+    padding: .625rem;
+    width: 100%;
+    height: 555px
+}
+.custom_scroll_parent_div.short {
+    height: 250px
+}
+@media (max-width: 47.93em) {
+    .custom_scroll_parent_div {
+        height: 300px
+    }
+}
+.consent_content {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+    padding: .625rem
+}
+.consent_content div>div>p {
+    font-size: 13px;
+    font-size: .8125rem
+}
+.consent_content .container,
+.consent_content .container #header {
+    width: 100%!important
+}
+.print-save {
+    margin-bottom: 10px
+}
+#printSection {
+    display: none
+}
+@media print {
+    .printing * {
+        visibility: hidden;
+        height: 0
+    }
+    #printSection,
+    #printSection * {
+        visibility: visible;
+        height: auto
+    }
+    #printSection {
+        display: block;
+        overflow: visible
+    }
+}
+.td-background-lightest-gray,
+.td-callout-lightest-gray,
+body.td-background-lightest-gray {
+    background: #f3f3f3
+}
+.td-callout {
+    height: 100%;
+    padding: 15px 15px 10px
+}
+@media (max-width: 47.93em) {
+    .td-callout {
+        margin-bottom: 10px
+    }
+}
+.td-checkbox-div-wrapper {
+    padding-top: 10px
+}
+[td-modal] {
+    cursor: pointer
+}
+.td-modal {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #1c1c1c;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 99999;
+    visibility: visible
+}
+.td-modal.modal_hide {
+    visibility: hidden
+}
+.td-modal.centered .modal-wrapper {
+    background: 0 0
+}
+.td-modal.centered .modal-wrapper .td-container {
+    background: #fff
+}
+@media screen and (max-width: 767px) {
+    .td-modal.centered .modal-wrapper .td-container {
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+.td-modal.centered .custom_modal_scroll .modal_scroll_div {
+    background: 0 0
+}
+.td-modal.centered .modal-inner {
+    margin-bottom: 20px
+}
+.td-modal .modal-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+    background: #fff;
+    width: 60%;
+    max-height: 80vh;
+    margin: 0 auto
+}
+@media screen and (max-width: 767px) {
+    .td-modal .modal-wrapper {
+        height: 100vh;
+        max-height: none;
+        padding-top: 15px;
+        padding-bottom: 0;
+        width: 100%
+    }
+}
+.td-modal .modal-wrapper .modal-inner {
+    position: relative;
+    max-height: calc(80vh - 100px)
+}
+@media screen and (max-width: 767px) {
+    .td-modal .modal-wrapper .modal-inner {
+        max-height: none;
+        height: 100%;
+        margin-bottom: 50px
+    }
+}
+.td-modal .modal-wrapper button {
+    width: 100%
+}
+.td-modal .td-icon-wrapper.close {
+    cursor: pointer;
+    top: 30px;
+    right: 1200px
+}
+@media screen and (max-width: 767px) {
+    .td-modal .td-icon-wrapper.close {
+        margin-top: 15px
+    }
+}
+.td-modal .td-icon-wrapper.close .td-icon {
+    font-size: 1rem
+}
+.td-modal:not(.centered) .custom_modal_scroll {
+    width: 100%
+}
+.custom_modal_scroll {
+    position: relative
+}
+.custom_modal_scroll .modal_scroll_div {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #FFF
+}
+.td-sim-modal {
+    width: 100%!important
+}
+.td-modal .close-btn {
+    float: right;
+    margin-right: 30px
+}
+.td-modal .close-button {
+    cursor: pointer
+}
+.td-modal .td-button-close.td-icon {
+    font-size: 2em
+}
+.td-modal .td-button-close.td-icon:focus {
+    outline: #038203 dotted thin
+}
+.ssb_sb {
+    border: 1px solid #767676;
+    background-color: #767676;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    width: 5px;
+    border-radius: 10px
+}
+.ssb_st {
+    border: 1px solid #fff;
+    background-color: #fff;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+.ssb_sb_disable {
+    background-color: #FFF!important;
+    border-color: #FFF!important
+}

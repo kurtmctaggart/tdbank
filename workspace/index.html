@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en-CA" xml:lang="en-CA">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kurt McTaggart form mockup test" />
+	<link rel="canonical" href="#" />
+	<meta name="TD TEST">
+	<meta name="keywords" content="Test fof Kurt McTaggart">
+	<title>Responsive Design HTML5 FORM for TD | Kurt McTaggart </title>
+	<link rel="shortcut icon" href="https://www.tdinsurance.com/images/evergreen/ui/favicon.ico" type="image/vnd.microsoft.icon" />
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/default2.css" type="text/css" />
+	<link rel="stylesheet" href="css/default.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/td-docs.css" type="text/css" />
+	<link rel="stylesheet" href="css/td_sp.css" type="text/css" />
+
+	<link href="css/forms.css" rel="stylesheet" />
+	<link href="css/customTDResponsive.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="bootstrap/bootstrap-grid.min.css" type="text/css" />
+
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<link href="https://www.tdinsurance.com/system/v0.90/assets/css/stylesie89.css" rel="stylesheet">
+	<![endif]-->
+
+	<script src="https://td.allianz-assistance.ca/Scripts/jquery-1.9.1.js"></script>
+	<!--<script src="https://td.allianz-assistance.ca/Scripts/modernizr-2.6.2.js"></script>-->
+
+	<script type="text/javascript">
+		var provinceJson = {};
+		if (window.location.href.indexOf("tdinsurance.com") > -1) {
+			provinceJson = {
+				ON: 'Ontario',
+				BC: 'British Columbia',
+				MB: 'Manitoba',
+				NB: 'New Brunswick',
+				NF: 'Newfoundland and Labrador',
+				NT: 'Northwest Territories',
+				NS: 'Nova Scotia',
+				NU: 'Nunavut',
+				AB: 'Alberta',
+				PE: 'Prince Edward Island',
+				QC: 'Quebec',
+				SK: 'Saskatchewan',
+				YT: 'Yukon'
+			};
+		} else {
+			provinceJson = {
+				ON: 'Ontario',
+				BC: 'Colombie-Britannique',
+				MB: 'Manitoba',
+				NB: 'Nouveau-Brunswick',
+				NF: 'Terre-Neuve-et-Labrador',
+				NT: 'Territoires du Nord-Ouest',
+				NS: 'Nouvelle-Ecosse',
+				NU: 'Nunavut',
+				AB: 'Alberta',
+				PE: 'Ile-du-Prince-Edouard',
+				QC: 'Quebec',
+				SK: 'Saskatchewan',
+				YT: 'Yukon'
+			};
+		}
+
+		//-------------------------- Analytics 
+
+		var name = "province=";
+		var setcurrentselectedoption;
+		var ca = document.cookie.split(';');
+		var province;
+		for (var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ')
+				c = c.substring(1);
+			if (c.indexOf(name) == 0) {
+				province = c.substring(name.length, c.length);
+			}
+		}
+
+		var name = "language=";
+		var ca = document.cookie.split(';');
+		var language;
+		for (var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ')
+				c = c.substring(1);
+			if (c.indexOf(name) == 0) {
+				language = c.substring(name.length, c.length);
+			}
+		}
+
+		function getQueryParameter(parameterName) {
+			var queryString = window.top.location.search.substring(1);
+			var parameterName = parameterName + "=";
+			if (queryString.length > 0) {
+				begin = queryString.indexOf(parameterName);
+				if (begin != -1) {
+					begin += parameterName.length;
+					end = queryString.indexOf("&", begin);
+					if (end == -1) {
+						end = queryString.length
+					}
+					return unescape(queryString.substring(begin, end));
+				}
+			}
+			return "null";
+		}
+
+		function openError() {
+			var warnFlag = getQueryParameter('warnFlag');
+			var path = location.pathname;
+			if (warnFlag != null && warnFlag == "true") {
+				var userSeg = "";
+				$('#modalWarn #td-selected-product').text(
+					getQueryParameter('product'));
+				$('#modalWarn #td-selected-province').text(
+					provinceJson[getQueryParameter('province')]);
+				$('#modalWarn #td-selected-province').attr("data-code",
+					getQueryParameter('province'));
+				if (userSeg != 'undefined'
+					&& (userSeg == "Group" || userSeg.indexOf("Affinity") > -1)) {
+					$('#modalWarn a').attr('href', '/melochemonnex');
+				}
+				$('.td-flyout-content').css({
+					'width': 'auto',
+					'white-space': 'nowrap',
+					'left': '-9999px',
+					'visibility': 'hidden',
+					'display': 'none'
+				});
+				$('#modalWarn').tdModal({
+					'show': true
+				});
+
+				replaceBrowserUrl(path);
+			}
+			if ($('#modalError') != undefined && $('#modalError') != null
+				&& $('#modalError').length > 0) {
+				$('#modalError').tdModal({
+					'show': true
+				});
+			}
+			var groupProvinceChange = getQueryParameter('groupProvinceChange');
+			if (groupProvinceChange != null && groupProvinceChange == "yes") {
+				replaceBrowserUrl(path);
+			}
+		}
+		function replaceBrowserUrl(path) {
+			if (typeof (history.pushState) != "undefined") {
+				history.replaceState({}, "", path);
+			}
+		}
+	</script>
+
+</head>
+
+<body class="td_rq_docs td-second-level-page td-background-color-gray ">
+
+	<a name="top" id="top"></a>
+	<div class="td-skip">
+		<a href="#main">Skip to main content</a>
+	</div>
+
+	<div class="td-header td-nav-transition visible-xs visible-sm td-sticky-top">
+		<button type="button" class="td-toggle-left-canvas">
+			<span class="td-forscreenreader">Toggle navigation</span>
+			<span class="td-icon-bar"></span>
+			<span class="td-icon-bar"></span>
+			<span class="td-icon-bar"></span>
+		</button>
+		<button type="button" class="td-button-back" onclick="backurl();">
+			<span class="td-icon td-icon-leftCaret"></span>
+		</button>
+		<div class="td-logo-title-container">
+			<a class="td-logo" target="_self" href="javascript:void(0);" role="img" aria-label="TD Insurance">
+				<img alt="TD Insurance" class="logo-mobile" src="https://www.tdinsurance.com/Images/TDI_Mob_logo_tcm315-176979.png">
+				<img alt="TD Insurance" class="logo-mobileX2" src="https://www.tdinsurance.com/Images/TDI_Mob_logo_tcm315-176979.png/Images/TDI_Mob_logo_X2_tcm315-176978.png"
+				 height="32">
+				<img src="https://www.tdinsurance.com/Images/TDI_Mob_logo_tcm315-176979.png/Images/td-shield_tcm315-176980.gif" class="logo-shield"
+				 alt="TD Insurance">
+			</a>
+		</div>
+		<a href="https://myinsurance.td.com" class="td-my-insurance-mobile">
+			<span class="td-forscreenreader">Login</span>
+			<span class="td-icon td-copy-white td-icon-password td-floatright"></span>
+		</a>
+	</div>
+	
+	<!-- <div class="td-quick-actions-mobile">
+		<ul>
+			<li><a href="/claims"><span class="td-icon-wrapper td-interactive-icon td-icon td-icon-claims td-copy-white td-background-brightgreen" aria-hidden="true"></span><h4 class="label">File a Claim</h4></a></li>
+			<li><a href="javascript:void(0);"
+		onclick="$('#modalQuoterTDI').tdModal({'show':true});"><span class="td-icon-wrapper td-interactive-icon td-icon td-icon-GetAQuote td-copy-white td-background-orange" aria-hidden="true"></span><h4 class="label">Get a Quote</h4></a></li>
+		</ul>
+	</div> -->
+	
+	<nav class="td_rq_menu td-navigation td-left-menu" role="navigation" aria-label="Main Navigation">
+		<div class="td-container" id="navContainer">
+			<div class="td-off-canvas-header">
+				<div class="td-logo-title-container">
+					<span class="td-forscreenreader">Menu</span>
+					<a id="myAnchor" class="td-logo" href="/" onclick="_self">
+						<img src="https://www.tdinsurance.com/Images/td-shield_tcm315-176980.gif" class="logo-shield" alt="TD Insurance" width="40"
+						 height="35">
+						<img alt="TD Insurance" class="logo-mobile" src="https://www.tdinsurance.com/Images/TDI_Mob_logo_tcm315-176979.png">
+						<img alt="TD Insurance" class="logo-desktop" src="https://www.tdinsurance.com/Images/TDI_DT_TabL_logo_tcm315-176760.png">
+						<img alt="TD Insurance" class="logo-mobileX2" src="https://www.tdinsurance.com/Images/TDI_Mob_logo_X2_tcm315-176978.png"
+						 height="32">
+						<img alt="TD Insurance" class="logo-desktopX2" src="https://www.tdinsurance.com/Images/TDI_DT_TabL_logo_X2_tcm315-176977.png"
+						 height="39">
+					</a>
+					<button type="button" class="td-button-close td-close-left visible-sm visible-xs">
+						<span class="td-forscreenreader" aria-hidden="">Close Menu</span>
+						<span class="td-icon td-icon-close" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+
+			<ul class="td-nav-left td-nav-list pull-left" id="navLevel1">
+				<li class="visible-sm visible-xs login">
+					<a href="https://myinsurancecpo.td.com/waw/idp/login.htm?execution=e1s1">
+						<span class="icon-small td-icon td-icon-Login"></span>Login
+					</a>
+				</li>
+				<li class="visible-sm visible-xs get-quote">
+					<a id="mobilemodalQuote" href="javascript:void(0);" onclick="$('#modalQuoterTDI').tdModal({'show':true});">
+						<span class="icon-small td-icon-wrapper td-interactive-icon td-icon td-icon-GetAQuote"></span>Get a quote</a>
+				</li>
+				<li class="visible-sm visible-xs make-claim">
+					<a href="https://www.tdinsurance.com/claims#Tab_Travel">
+						<span class="icon-small td-icon-wrapper td-interactive-icon td-icon td-icon-claims"></span>Make a Claim
+					</a>
+				</li>
+				<li class="active">
+					<a href="https://www.tdinsurance.com/products-services">
+						<span class="icon-small td-icon td-icon-products">
+						</span>
+						Products
+					</a>
+				</li>
+				<li>
+					<a href="/claims">
+						<span class="icon-small td-icon td-icon-legal">
+						</span>
+						Claims
+					</a>
+					<ul class="td-submenu" data-settings='{"maxDisplayItems":"6", "maxSpacePercent":"1.0"}'>
+						<li class="td-flyout-label td-flyout-label-more {position:'right', triggerEvent:'click', width:'auto', nowrap:'true'}">
+							<a href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-controls="more_insurance">More Insurance
+								<span class="td-icon td-copy-white td-icon-downCaret td-margin-left-5"></span>
+							</a>
+							<div class="td-flyout-content td-submenu-flyout">
+								<ul id="more_insurance"></ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="https://www.tdinsurance.com/customer-service">
+						<span class="icon-small td-icon td-icon-contactUs">
+						</span>
+						Contact Us
+					</a>
+					<ul class="td-submenu" data-settings='{"maxDisplayItems":"6", "maxSpacePercent":"1.0"}'>
+						<li class="td-flyout-label td-flyout-label-more {position:'right', triggerEvent:'click', width:'auto', nowrap:'true'}">
+							<a href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-controls="more_insurance">More Insurance
+								<span class="td-icon td-copy-white td-icon-downCaret td-margin-left-5"></span>
+							</a>
+							<div class="td-flyout-content td-submenu-flyout">
+								<ul id="more_insurance"></ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="visible-sm visible-xs">
+					<a href="#">Language: English</a>
+					<ul class="td-submenu" data-settings='{"maxDisplayItems":"6", "maxSpacePercent":"1.0"}'>
+						<li class="td-makeclickable active">
+							<a href="https://www.tdinsurance.com/products-services/travel-medical-insurance/" class="td-makeclickable-target no-icon-indent">
+								<span lang="en">English</span>
+							</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="javascript:void(0);" class="td-makeclickable-target no-icon-indent" onclick="setCrossDomain('https://www.tdassurance.com/produits-et-services/assurance-medicale-de-voyage/');">
+								<span lang="fr">Français</span>
+							</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="https://zh.tdinsurance.com/products-services/travel-medical-insurance/" class="td-makeclickable-target no-icon-indent">
+								<span lang="zh-cn">简体中文</span>
+							</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="https://zt.tdinsurance.com/products-services/travel-medical-insurance/" class="td-makeclickable-target no-icon-indent">
+								<span lang="zh-hk">繁體中文</span>
+							</a>
+						</li>
+						<li class="td-flyout-label td-flyout-label-more {position:'right', triggerEvent:'click', width:'auto', nowrap:'true'}">
+							<a href="javascript:void(0);" role="menuitem" aria-haspopup="true" aria-expanded="false">More Insurance
+								<span class="td-icon td-copy-white td-icon-downCaret td-margin-left-5"></span>
+							</a>
+							<div class="td-flyout-content td-submenu-flyout">
+								<ul></ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="visible-sm visible-xs">
+					<a href="#">Province: </a>
+					<ul class="td-submenu" data-settings='{"maxDisplayItems":"6", "maxSpacePercent":"1.0"}'>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('AB','Alberta')" class="td-makeclickable-target no-icon-indent">Alberta</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('BC','British Columbia')" class="td-makeclickable-target no-icon-indent">British Columbia</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('MB','Manitoba')" class="td-makeclickable-target no-icon-indent">Manitoba</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('NB','New Brunswick')" class="td-makeclickable-target no-icon-indent">New Brunswick</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('NF','Newfoundland/Labrador')" class="td-makeclickable-target no-icon-indent">Newfoundland/Labrador</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('NT','Northwest Territories')" class="td-makeclickable-target no-icon-indent">Northwest Territories</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('NS','Nova Scotia')" class="td-makeclickable-target no-icon-indent">Nova Scotia</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('NU','Nunavut')" class="td-makeclickable-target no-icon-indent">Nunavut</a>
+						</li>
+						<li class="td-makeclickable active">
+							<a href="#" onclick="getCookie('ON','Ontario')" class="td-makeclickable-target no-icon-indent">Ontario</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('PE','Prince Edward Island')" class="td-makeclickable-target no-icon-indent">Prince Edward Island</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('QC','Quebec')" class="td-makeclickable-target no-icon-indent">Quebec</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('SK','Saskatchewan')" class="td-makeclickable-target no-icon-indent">Saskatchewan</a>
+						</li>
+						<li class="td-makeclickable">
+							<a href="#" onclick="getCookie('YT','Yukon')" class="td-makeclickable-target no-icon-indent">Yukon</a>
+						</li>
+						<li class="td-flyout-label td-flyout-label-more {position:'right', triggerEvent:'click', width:'auto', nowrap:'true'}">
+							<a href="javascript:void(0);" role="menuitem" aria-haspopup="true" aria-expanded="false"> More Insurance
+								<span class="td-icon td-copy-white td-icon-downCaret td-margin-left-5"></span>
+							</a>
+							<div class="td-flyout-content td-submenu-flyout">
+								<ul></ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul class="td-complementary-nav pull-right visible-lg visible-md">
+				<li class="td-flyout-label {position:'right', triggerEvent:'click', width:'auto', nowrap:'true'}">
+					<a href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-controls="province_option">
+						<span class="td-forscreenreader">Select province</span>ON
+						<span class="td-icon td-copy-white td-icon-downCaret td-floatright"></span>
+					</a>
+					<div class="fake_flyout_label" aria-hidden="true">
+						<span>ON</span>
+						<span class="td-icon td-copy-black td-icon-upCaret" aria-hidden="true"></span>
+					</div>
+					<div class="td-flyout-content td-complementary-flyout">
+						<ul id="province_option">
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"AB"}' onclick="getCookie('AB','Alberta')">Alberta</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"BC"}' onclick="getCookie('BC','British Columbia')">British Columbia</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"MB"}' onclick="getCookie('MB','Manitoba')">Manitoba</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"NB"}' onclick="getCookie('NB','New Brunswick')">New Brunswick</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"NF"}' onclick="getCookie('NF','Newfoundland/Labrador')">Newfoundland/Labrador</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"NT"}' onclick="getCookie('NT','Northwest Territories')">Northwest Territories</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"NS"}' onclick="getCookie('NS','Nova Scotia')">Nova Scotia</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"NU"}' onclick="getCookie('NU','Nunavut')">Nunavut</a>
+							</li>
+							<li class="active">
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"ON"}' onclick="getCookie('ON','Ontario')">Ontario</a>
+								<span class="td-icon td-icon-checkMark" aria-hidden="true"></span>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"PE"}' onclick="getCookie('PE','Prince Edward Island')">Prince Edward Island</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"QC"}' onclick="getCookie('QC','Quebec')">Quebec</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"SK"}' onclick="getCookie('SK','Saskatchewan')">Saskatchewan</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"YT"}' onclick="getCookie('YT','Yukon')">Yukon</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="td-flyout-label {position:'right', triggerEvent:'click', width:'auto', nowrap:'true'}">
+					<a href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-controls="language_option">
+						<span class="td-forscreenreader">Select language</span>
+						En
+						<span class="td-icon td-copy-white td-icon-downCaret td-floatright"></span>
+					</a>
+					<div class="fake_flyout_label" aria-hidden="true">
+						<span>
+							En
+						</span>
+						<span class="td-icon td-copy-black td-icon-upCaret"></span>
+					</div>
+					<div class="td-flyout-content td-complementary-flyout">
+						<ul id="language_option">
+							<li class="active">
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"en"}' onclick="setCrossDomain('https://www.tdinsurance.com/products-services/travel-medical-insurance/');">English</a>
+								<span class="td-icon td-icon-checkMark" aria-hidden="true"></span>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-settings='{"shortName":"", "code":"fr"}' onclick="setCrossDomain('https://www.tdassurance.com/produits-et-services/assurance-medicale-de-voyage/');">Français</a>
+							</li>
+							<li>
+								<a href="https://zh.tdinsurance.com/products-services/travel-medical-insurance/">
+									<span lang="zh-cn">简体中文</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://zt.tdinsurance.com/products-services/travel-medical-insurance/">
+									<span lang="zh-hk">繁體中文</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="td-my-insurance">
+					<a href="https://myinsurance.td.com" target="">
+						<span class="td-icon td-copy-white td-icon-password td-floatleft td-copy-emphasized td-margin-right-0"></span>Login</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<nav class="td-off-canvas td-right-menu">
+		<div class="td-off-canvas-header">
+			<div class="td-account-user-name pull-left">
+				<span class="td-icon td-account"></span>
+			</div>
+			<ul class="td-complementary-nav pull-right">
+				<li class="td-flyout-label {position:'left', triggerEvent:'click', closetext:'Close details',opentext:'View Details'}">
+					<a href="#">
+						<span class="td-forscreenreader">Select language</span>
+						<strong>
+							English
+						</strong>
+						<span class="td-caret"></span>
+					</a>
+					<div class="td-flyout-content td-language">
+						<ul>
+							<li>
+								<a href="javascript:void(0);" onclick="setCrossDomain('https://www.tdinsurance.com/products-services/travel-medical-insurance/');">EN
+									<span class="td-forscreenreader">View Details</span>
+								</a>
+							</li>
+							<li class="td-makeclickable">
+								<a href="https://zh.tdinsurance.com/products-services/travel-medical-insurance/" class="td-makeclickable-target no-icon-indent">
+									<span lang="zh-cn">简体中文</span>
+								</a>
+							</li>
+							<li class="td-makeclickable">
+								<a href="https://zt.tdinsurance.com/products-services/travel-medical-insurance/" class="td-makeclickable-target no-icon-indent">
+									<span lang="zh-hk">繁體中文</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="td-background-color-gray progress-wrapper ">
+		<div id="main" class="td-container td-background-color-gray">
+			<div class="td-layout-column td-col-sm-9 td-background-color-gray ">
+				<h2>Tell us about yourself</h2>
+				<p>Thanks for choosing TD Insurance! In order to safely set up your new accounts and services, please tell us about yourself.</p>
+				<br/>
+				<h2>Personal Information</h2>
+				<form action="thank-you.html" method="post" class="container-fluid" id="personal-info">
+					<div class="row form-fields">
+						<div class="col-sm-12 col-lg-2">
+							<select id="Titlekm" name="Title" aria-label="Title" required class="" aria-required="true" aria-invalid="false">
+								<option value="">Title*</option>
+								<option value="01">Mr.</option>
+								<option value="02">Mrs.</option>
+								<option value="03">Dr.</option>
+							</select>
+						</div>
+						<div class="col-sm-12 col-lg-3">
+							<input required type="text" name="First Name" id="First Name" class="" placeholder="First Name*" required="required"
+								pattern="{A-Za-z}" Title="Please enter your name" aria-required="true" aria-invalid="false" aria-describedby="FirstName-Required"
+								size="20" />
+						</div>
+						<div class="col-sm-12 col-lg-3">
+							<input name="Middle Initial" placeholder="Middle Initial" id="Middle Initial" class="" placeholder="Middle Initial"
+								required type="text" aria-required="true" aria-invalid="false" aria-describedby="Middle Initial-Required" pattern="[A-Za-z]{1}"
+								size="15" />
+						</div>
+						<div class="col-sm-12 col-lg-4">
+							<input type="text" name="Last Name" class="" id="LastName" placeholder="Last Name*" required="required" aria-required="true"
+								aria-invalid="false" aria-describedby="LastName-Required" size="25" pattern="{A-Za-z}" Title="Please enter your full name"
+							/> 
+						</div>
+					</div>
+					<div class="row form-fields">
+						<div class="col-sm-12 col-lg-5">
+							<input required type="email" name="email" id="email" size="25" class="" placeholder="Email Address*" aria-required="true"
+								aria-invalid="false" aria-describedby="email-Required" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+								required />
+							<div class="tooltipkm">
+								<img src="images/question.png" />
+								<span class="tooltiptextkm">We will contact you via email within 48 hours.</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-lg-3">
+							<input required type="date" name="dob" id="dob" placeholder="Date of Birth*" size="30" class="" aria-required="true"
+								aria-invalid="false" aria-describedby="dob-Required" />
+						</div>
+						<div class="col-sm-12 col-lg-4">
+							<input required type="number" name="ssn" id="ssn" size="25" class="" placeholder="Social Insurance Number*" pattern="[0-9]{9}"
+								title="Please use format xxxxxxxxx" required="required" td-ui-validate-function="" required type="text" aria-required="true"
+								aria-invalid="false" aria-describedby="ssn-format" />
+							<div class="tooltipkm">
+								<img src="images/question.png" />
+								<span class="tooltiptextkm">This is required to verify your Canadian citizenship</span>
+							</div>
+						</div>
+					</div>
+					<div class="row form-actions">
+						<div class="col-sm-12">
+							<input type="reset" name="Cancel" value="Cancel" class="td-button  white  td-button-primary " />
+							<input type="submit" name="submit" value="Submit" class="td-button td-button-secondary white  marginLeft15" />
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="clear"></div>
+			<div class="td-col-sm-3 td-margin-top-30">
+				<p>You are applying for:</p>
+				<h2>TD&reg; Travel Medical Insurance</h2>
+				<button class="td-button td-button-secondary td-button-large td-copy-nowrap" onclick="window.location.href = 'https://www.tdcanadatrust.com/products-services/insurance/insurance-index.jsp'" type="button">
+				<span class="td-icon"></span>See more coverage options</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="td-fullwidth-dark-green td-padding-vert-0" role="contentinfo">
+		<div class="td-container" prefix="s: http://www.sdl.com/web/schemas/core" typeof="s:Footer">
+			<div class="td-row">
+				<div class="td-footer-content td-col-xs-12" style="background-image:url('https://www.tdinsurance.com/Images/footer_seat_tcm315-176757.png');">
+					<p class="td-footer-heading td-copy-white td-copy-align-centre td-bottom-margin-40 " property="s:heading">Need to talk to us directly?
+						<a href="https://www.tdinsurance.com/customer-service/contact-us" target="_self" class="td-contact-link td-link-nounderline td-link-standalone">Contact us</a>
+					</p>
+
+					<div class="td-footer-links td-copy-align-centre td-copy-white">
+						<a id="myAnchor" class="td-copy-white td-link-nounderline td-copy-standard" target="_self" href="http://www.td.com/privacy-and-security/privacy-and-security/tdi-index.jsp">Privacy and Security</a>
+						<a id="myAnchor" class="td-copy-white td-link-nounderline td-copy-standard" target="_self" href="/legal">Legal</a>
+						<a id="myAnchor" class="td-copy-white td-link-nounderline td-copy-standard" target="_self" href="/customer-service/accessibility">Accessibility</a>
+						<a id="myAnchor" class="td-copy-white td-link-nounderline td-copy-standard" target="_self" href="/about-us/">About Us</a>
+						<a id="myAnchor" class="td-copy-white td-link-nounderline td-copy-standard" target="_blank" href="http://jobs.td.com/">Careers</a>
+					</div>
+					<div class="td-footer-social td-copy-align-centre td-top-margin-40 ">
+						<ul>
+							<li>
+								<a class="td-link-nounderline" href="https://www.facebook.com/TDInsurance/" target="_blank">
+									<div class="td-icon-wrapper td-interactive-icon td-background-darkgreen">
+										<span aria-hidden="true" class="td-icon td-icon-facebookIcon"></span>
+										<span class="td-forscreenreader" id="icon1Description">Facebook</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="td-link-nounderline" href="https://twitter.com/TD_Insurance" target="_blank">
+									<div class="td-icon-wrapper td-interactive-icon td-background-darkgreen">
+										<span aria-hidden="true" class="td-icon td-icon-twitterIcon"></span>
+										<span class="td-forscreenreader" id="icon2Description">Twitter</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="td-link-nounderline" href="https://www.youtube.com/channel/UC_6ADZIvEFxWnYGG6j_6FLA" target="_blank">
+									<div class="td-icon-wrapper td-interactive-icon td-background-darkgreen">
+										<span aria-hidden="true" class="td-icon td-icon-youtubeLogo"></span>
+										<span class="td-forscreenreader" id="icon3Description">YouTube</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/libraries.js"></script>
+	<script src="js/default.min.js"></script>
+	<script src="js/forms.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2265 @@
+﻿.td-copy-white {
+color:#fff
+}
+
+
+.app-title {
+ font-family: "Webly Sleek SemiBold";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #fff;
+    text-align:center;
+    margin-top:10px;
+    
+}
+
+.td-logo {
+    display:inline !important;
+}
+
+/* Phone size - xs */
+@media (min-width: 0) {
+    .td-collapsing-vertical-divider {
+        border-right: 0;
+    }
+    .td-collapsing-horizontal-divider {
+        display: block;
+        margin-bottom: 30px;
+        width: 83.3% !important;
+    }
+
+    .td-returnToTop {
+         position: fixed;
+         border: 2px solid #008a00;
+         border-radius: 30px;
+         padding-left: 15px;
+         padding-right: 30px;
+         padding-top: 15px;
+         padding-bottom: 15px;
+         color: #008a00;
+         background-color: white;
+         bottom: 30px;
+         right: 30px;
+         cursor: default;
+         z-index: 1;
+     }
+
+    .dateOfBirthMarginTop {
+        margin-top:15px !important;
+    }
+
+    .td-header-mobile .td-section-right {
+        top:4px !important;
+}
+
+}
+
+@media (max-width: 40em) {
+                        .td-next-button-margin {
+    margin-left:0px !important;
+    margin-bottom: 10px !important;
+}
+
+.td-prev-button-margin {
+    margin-right:0px !important;
+    margin-top:10px !important;
+} 
+}
+
+/* Tablet size - sm */
+@media (min-width: 48em) {
+    .app-title {
+        margin-top: 21px;
+    }
+
+    .logo-tablet {
+    display:inline !important;
+    }
+    
+    .td-returnToTop {
+        position: fixed;
+        border: 2px solid #008a00;
+        border-radius: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #008a00;
+        background-color: white;
+        bottom: 15px;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+
+/* Tablet size - md */
+@media (min-width: 64em){
+    .app-title {
+        margin-top: 24px;
+        font-size: 18px;
+    }
+    .td-collapsing-vertical-divider {
+        border-right: solid 1px;
+        border-color: #ccc
+    }
+    .td-collapsing-horizontal-divider {
+        display: none;
+    }
+}
+
+/* Desktop size - lg */
+@media (min-width: 75em) {
+    .td-collapsing-vertical-divider {
+        border-right: solid 1px;
+        border-color: #ccc
+    }
+}
+
+.td-hidden {
+    display: none;
+}
+
+span.td-triggericon.grey-border:before {
+    font-style: normal;
+    font-weight: 300;
+    font-variant: normal;
+    font-size: 100%;
+    text-transform: none;
+    content: "+";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:#bdbdbd;
+    display: block;
+    visibility: visible;
+}
+
+span.td-triggericon.white-border:before {
+    font-style: normal;
+    font-weight: 300;
+    font-variant: normal;
+    font-size: 100%;
+    text-transform: none;
+    content: "+";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:white;
+    display: block;
+    visibility: visible;
+}
+
+.td-mintgreen-background {
+    background: #f4f7f4
+}
+
+.td-lightGreen-bckgrnd {
+    background-color: #008a00
+}
+
+.td-darkGreen-bckgrnd {
+    background-color: #2b5840 
+}
+
+.td-discount-copy {
+    margin-bottom: 18px;
+    display: inline-block;
+}
+.td-discount-upsell {
+    text-align: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.td-product-premium {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.td-upsell-product-premium {
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+.td-travelling-more-callout {
+    background: #f4f7f4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Padding spacers */
+.td-spacing-box-small {
+    height: 20px;
+}
+.td-spacing-box-medium {
+    height: 30px;
+}
+.td-spacing-box-double {
+    height: 40px;
+}
+.td-spacing-box-triple {
+    height: 60px;
+}
+
+/* TD Header replacements */
+
+@media (min-width: 0) {
+    .td-h1-styling {
+        font-size: 36px;
+        color: #1a5336;
+    }
+    .td-h2-styling {
+        font-size: 32px;
+        color: #1a5336;
+    }
+    .td-h3-styling {
+        font-size: 28px;
+    }
+}
+@media (min-width: 48em) {
+    .td-h1-styling {
+        font-size: 38px;
+        color: #1a5336;
+    }
+    .td-h2-styling {
+        font-size: 34px;
+        color: #1a5336;
+    }
+    .td-h3-styling {
+        font-size: 30px;
+    }
+}
+
+/* Standard bottom margins */
+.td-bottom-margin-0 {
+    margin-bottom: 0px !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-5 {
+    margin-bottom: 5px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-10 {
+    margin-bottom: 10px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-15 {
+    margin-bottom: 15px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-20 {
+    margin-bottom: 20px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-25 {
+    margin-bottom: 25px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-30 {
+    margin-bottom: 30px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-40{
+    margin-bottom: 40px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-50{
+    margin-bottom: 50px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-60{
+    margin-bottom: 60px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-90{
+    margin-bottom: 90px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-bottom-margin-100 {
+    margin-bottom: 100px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-top-margin-0 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+.td-top-margin-5 {
+    margin-top: 5px !important;
+    padding-top: 0 !important;
+}
+.td-top-margin-10 {
+    margin-top: 10px !important;
+    padding-top: 0 !important;
+}
+.td-top-margin-15 {
+    margin-top: 15px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-top-margin-20 {
+    margin-top: 20px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-top-margin-30 {
+    margin-top: 30px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-top-margin-40 {
+    margin-top: 40px !important;
+    padding-top: 0 !important;
+    padding-bottom:0 !important;
+}
+.td-top-margin-60 {
+    margin-top: 60px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
+/* Product Options list margins*/
+.td-coverage-details {
+    margin-left: 10px !important
+}
+.td-included-benefits {
+    margin-left: 10px !important
+}
+ul.td-list li:before {
+    margin-left: -19px;
+}
+.td-expand-icon-shift-left {
+    margin-left: -40px;
+}
+
+/* Product Options specific row margins */
+@media (min-width: 0) {
+    .td-po-header {
+        margin-top: 20px !important;
+        margin-bottom: 30px !important;
+        padding: 0 !important;
+    }
+}
+@media (min-width: 48em) {
+    .td-po-header {
+        margin-top: 60px !important;
+        margin-bottom: 20px !important;
+        padding: 0 !important;
+    }
+}
+@media (min-width: 0) {
+    .td-po-exclusions {
+        margin-top: 0px !important;
+        margin-bottom: 30px !important;
+        padding: 0 !important;
+    }
+}
+@media (min-width: 48em) {
+    .td-po-exclusions {
+        margin-top: 0px !important;
+        margin-bottom: 40px !important;
+        padding: 0 !important;
+    }
+}
+@media (min-width: 0) {
+    .td-po-benefits {
+        margin-top: 0px !important;
+        margin-bottom: 10px !important;
+        padding: 0 !important;
+    }
+}
+@media (min-width: 48em) {
+    .td-po-benefits {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        padding: 0 !important;
+    }
+}
+@media (min-width: 0) {
+    .td-po-bottom-line {
+        margin-top: 0px !important;
+        margin-bottom: 30px !important;
+        padding: 0 !important;
+    }
+}
+@media (min-width: 48em) {
+    .td-po-bottom-line {
+        margin-top: 0px !important;
+        margin-bottom: 40px !important;
+        padding: 0 !important;
+    }
+}
+.td-po-exclusions-caret {
+    margin-top: 0px !important;
+    padding-top: 5px !important;
+}
+
+.marginTopBottom15 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+.td-edit-quote-button {
+    margin-top: -2px;
+    height: 30px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-family: 'Webly Sleek Semibold';
+    color: #008a00 !important;
+    stroke: #008a00;
+    border-width: 1px;
+    border-color: #008a00;
+    background-color: white;
+}
+.td-edit-application-button {
+    margin-top: -2px;
+    /*height: 30px;*/
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    font-size: 12px;
+    font-family: 'Webly Sleek Semibold';
+    color: #008a00 !important;
+    stroke: #008a00;
+    border-width: 1px;
+    border-color: #008a00;
+    background-color: white;
+}
+.td-edit-quote-icon {
+    color: #008a00 !important;
+    width: 15px !important;
+    font-size: 15px !important;
+}
+
+/* Product options collapsible section indentation  */
+@media (min-width: 0) {
+    .td-collapsable-header {
+        margin-left: 10px;
+        color: #1c1c1c;
+    }
+    .td-indented-divider {
+        padding-left: 0;
+    }
+    .td-indented-list {
+        margin-left: 33px !important;
+}
+}
+@media (min-width: 48em) {
+    .td-collapsable-header {
+        margin-left: 10px !important;
+    }
+    .td-indented-list {
+        margin-left: 31px !important;
+        margin-bottom: 0px !important;
+    }
+    
+}
+@media (min-width: 64em) {
+    .td-indented-divider {
+        padding-left: 80px !important;
+        margin-left: 64px !important;
+    }
+}
+
+/* Confirmation page styles */
+.td-conf-header {
+    margin-top: 60px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.td-emergency-card-header {
+    background-color: #f3f3f8;
+    border-top: solid 1px;
+    border-color: #ccc;
+    padding-bottom: 20px !important;
+}
+.td-emergency-card-header-text {
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
+}
+.td-emergency-card-body {
+    background-color: #f4f7f4;
+    border-top: solid 1px;
+    border-color: #ccc;
+}
+.td-emergency-card-logo {
+    height: 40px;
+    width: 40px;
+    display: inline;
+    margin-right: 20px;
+}
+.td-conf-print-icon {
+    margin-top: 15px !important;
+    padding-top: 0px !important;
+}
+.td-conf-print-text {
+    margin-top: -5px !important;
+}
+@media (min-width: 0) {
+    .td-print-this-page {
+        display: none;
+    }
+    .td-emergency-card-divider {
+        width: 100% !important;
+}
+    .td-phone-with-link {
+        display: block;
+}
+    .td-phone-without-link {
+        display: none;
+    }
+}
+@media (max-width: 64em) {
+    .td-container {
+        padding-top: 60px;
+    }
+}
+@media (min-width: 48em) {
+    .td-phone-with-link {
+        display: none;
+    }
+    .td-phone-without-link {
+        display: block;
+    }
+}
+@media (min-width: 64em) {
+    .td-emergency-card-divider {
+        width: 79.5% !important;
+    }
+}
+@media (min-width: 75em) {
+    .td-print-this-page {
+        display: block;
+    }
+    .td-emergency-card-divider {
+        width: 73.5% !important;
+    }
+}
+.conf-purchase-summary-header {
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+}
+
+.disabledLink {
+ pointer-events: none;
+}
+
+
+/* Half-column arrangement for emergency card */
+@media (min-width: 64em) {
+    .td-emergency-inset {
+        margin-left: 10%
+    }
+    .td-emergency-right-inset {
+        width: 29.667%
+    }
+}
+@media (min-width: 75em) {
+    .td-emergency-inset {
+        margin-left: 12.667%
+    }
+    .td-emergency-right-inset {
+        width: 48.667%
+    }
+}
+
+
+/*span.td-triggericon.accordian:before {
+color:white;
+}*/
+
+.td-form-icon.tool-tip {
+top:0px;
+font-size:20px;
+}
+
+
+.accordianEditContent {
+    font-family: "Webly Sleek SemiLight", Helvetica-, droid sans, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+@media (max-width: 47.94em) {
+    .accordianEditContent  {
+        font-size: 1.125rem;
+        line-height: 1.555
+    }
+    .td-vertical-divider-line-1 {
+        height:47px !important;
+    }
+}
+
+.hideEditIconAboutHealth {
+display:none;
+}
+
+.hideEditIconHealthHist {
+display:none;
+}
+
+.hideEditIconCurrentHealth {
+display:none;
+}
+
+.marginLeft15 {
+margin-left:15px;
+}
+
+.hideEditIconQuoteDetails {
+display:none;
+}
+
+.quotePrice {
+font-size:45px !important;
+}
+
+.hideEditIconYourHealthReview{
+display:none;
+}
+
+
+.hideEditIconHealthHistReview{
+display:none;
+}
+
+.hideEditIconCurrentHealthReview {
+display:none;
+}
+
+.hideEditIconPersonalDetailsReview {
+display:none;
+}
+
+@media  (min-width:560px) and (max-width:745px) {
+    .td-edit-quote-button {
+        margin-top: 20px !important;
+    }
+}
+
+@media  (max-width:320px) {
+    .toolTipLinkTD {
+    width:90% !important;
+    float:left !important;
+    }
+}
+
+@media (max-width: 19.7em) {
+                    .rightIconAccordian {
+    width:91px !important;
+    float:right !important;
+    padding-left: 0px !important;
+} 
+                    
+    .individualQuestPaddingTop {
+        margin-top:15px;
+    } 
+    .td-edit-quote-button {
+        margin-top: 20px !important;
+}
+
+        #NonAnnualQuoteHeader, #AnnualQuoteHeader {
+     margin-bottom:20px !important;
+    }
+
+                        #SubmitSummary {
+     width:236px;
+}
+
+    .telNumMobile {
+        display:inherit;
+    }
+
+    .telNumDesktop {
+        display:none;
+    }
+
+                .tdFooterContactNumDesktop {
+        display:none;
+    }
+
+    .tdFooterContactNumMobile {
+            display:block;
+    }
+}
+
+
+@media (max-width: 35em) {
+    .td-vertical-divider-line-1 {
+        height:47px !important;
+    }
+    .limitationsAndExclusions {
+        margin-top:30px !important;
+        margin-bottom:15px !important;
+    } 
+    .errorIcon {
+        margin-right:20px
+    } 
+    
+        .td-application-dob {
+    padding-top: 10px !important;
+}
+                .checkBoxLabel {
+    padding-left: 0px !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+                
+                .rightIconAccordian {
+    width:53px;
+    float:right;
+    padding-left: 0px !important;
+} 
+    .individualQuestPaddingTop {
+        margin-top:15px;
+    }
+  
+    
+    .td-edit-quote-button {
+        margin-top: 20px !important;
+    }
+  
+        #NonAnnualQuoteHeader, #AnnualQuoteHeader {
+     margin-bottom:20px !important;
+}
+  
+                        #SubmitSummary {
+     width:236px;
+}
+
+    .telNumMobile {
+        display:inherit;
+    }
+
+    .telNumDesktop {
+        display:none;
+    }
+
+                .tdFooterContactNumDesktop {
+        display:none;
+    }
+
+    .tdFooterContactNumMobile {
+            display:block;
+    }
+}
+
+/* Tablet size - under sm */
+@media (max-width: 48em) {
+
+    .toolTipLinkTD {
+    width:90%;
+    float:left;
+    }
+    .toolTipLinkTD {
+    width:100%;
+    float:none;
+    }
+    .headerSpacer {
+        height:46px;
+    }
+
+
+    h1 {
+        margin-top:40px !important;
+        margin-bottom:30px !important;
+    }
+
+    .subHeadingQuestionnaire,.subHeadingSummary {
+        margin-bottom:30px !important;
+        text-align:center !important;
+    }
+
+    .marginNavBottom {
+        margin-bottom:20px;
+    }
+    
+    .marginProgressBarBottom {
+        margin-bottom:20px;
+    }
+
+    h2 {
+        margin-top:0px !important;
+        margin-bottom:30px !important;
+    }
+    .marginIntroParagraph {
+        margin-top:0px !important;
+        margin-bottom:40px !important;
+    }
+
+    .marginQuestions {
+        margin-top:40px !important;
+        margin-bottom:20px !important;
+    }
+
+    .marginButtonBottom {
+        margin-top:0px !important;
+        margin-bottom: 40px !important;
+    }
+    .marginVerticalDividerBottom {
+        margin-top:0px !important;
+        margin-bottom:60px !important;
+    }
+
+    .marginBottomProgressStep {
+        margin-bottom:10px !important;
+    }
+
+    .progress-wrapper {
+        padding-top:30px;
+        padding-bottom:0px;
+    }
+    .td-progress-indicator {
+        padding-bottom:0px;
+    }
+    
+    .marginTopMedQuestions {
+        margin-top:15px !important;
+    }
+    .medQuesListTopPadding {
+        padding-top:5px !important;
+    }
+    .questBtns {
+        margin-top:40px !important;
+        margin-bottom:40px !important;
+    }
+    .questDivider {
+        margin-top:30px !important;
+    }
+    .currHealthQuesTopPadding {
+        padding-top:20px !important
+    }
+
+    .limitationsAndExclusions {
+        margin-top:30px !important;
+        margin-bottom:15px !important;
+    }
+
+    .marginQuoteDetails, .marginPersonalDetails {
+        margin-top:30px !important;
+        margin-bottom:30px !important;
+
+    }
+    .marginAdditionalTravellers {
+        margin-top:30px !important;
+        margin-bottom:60px !important;
+    }
+    .errorIcon {
+        margin-right:20px;
+    }
+    .buttonDivider {
+        margin-top:40px !important;
+    }
+    
+    /*.mobileSummaryDetails
+    {
+        text-align:center;
+}*/
+
+        .td-application-dob {
+    padding-top: 10px !important;
+} 
+        
+        .checkBoxLabel {
+    padding-left: 0px !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+} 
+
+.rightIconAccordian-review {
+    width: 106px;
+    float: right;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}        
+ .rightIconAccordian {
+    width: 104px;
+    float: right;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}        
+    .individualQuestPaddingTop {
+        margin-top:15px;
+}
+
+
+        #NonAnnualQuoteHeader, #AnnualQuoteHeader {
+     margin-bottom:20px !important;
+}
+
+                #SubmitSummary {
+     width:236px;
+    }
+                
+            .telNumMobile {
+        display:inherit;
+    }
+
+    .telNumDesktop {
+        display:none;
+    }             
+
+                .tdFooterContactNumDesktop {
+        display:none;
+    }
+
+    .tdFooterContactNumMobile {
+            display:block;
+    }
+}
+
+/* Tablet size - sm */
+@media (min-width: 48em) {
+
+    h1 {
+        margin-top:60px !important;
+        margin-bottom:40px !important;
+    }
+    .subHeadingQuestionnaire,.subHeadingSummary  {
+        margin-bottom:30px !important;
+        text-align:center !important;
+    }
+    .marginLeftQuesBtns {
+        margin-left:22px;
+    }
+    .headerSpacer {
+        height:63px;
+    }
+    .marginBottomProgressStep {
+        margin-bottom:20px !important;
+    }
+    .progress-wrapper {
+        padding-bottom:0px;
+    }
+    .td-progress-indicator {
+        padding-bottom:0px;
+    } 
+    .marginTopMedQuestions {
+    margin-top:25px !important;
+    }
+
+    .questBtns {
+        margin-top:60px !important;
+        margin-bottom:60px !important;
+    }
+    .questDivider {
+        margin-top:45px !important;
+    }
+    .currHealthQuesTopPadding {
+        padding-top:40px !important
+    }
+
+        .limitationsAndExclusions {
+    margin-top:30px !important;
+    margin-bottom:70px !important;
+}
+
+        .marginQuoteDetails {
+    margin-bottom:30px !important;
+}
+
+            .marginPersonalDetails {
+        margin-top:30px !important;
+        margin-bottom:30px !important;
+    }
+    .errorIcon {
+        margin-right:15px
+    }
+    
+    .marginAdditionalTravellers {
+        margin-top:30px !important;
+        margin-bottom:60px !important;
+    }
+    .buttonDivider {
+        margin-top:60px !important;
+    } 
+    
+        .td-application-dob {
+    padding-top: 0px !important;
+}  
+
+                footer .td-footer-content .td-footer-links {
+        line-height: 3 !important;
+}
+
+          .firstFooterLink {
+              width:100% !important;
+        margin-left:32px;
+    }
+    .td-footer-links {
+    width:100% !important;
+    }  
+    
+        .td-next-button-margin {
+    margin-left:15px !important;
+}
+
+.td-prev-button-margin {
+    margin-right:15px !important;
+}
+
+.rightIconAccordian {
+    width:163px;
+    float:right;
+}
+
+
+    #NonAnnualQuoteHeader, #AnnualQuoteHeader {
+     margin-bottom:20px !important;
+    }
+
+        #SubmitSummary {
+     width:370px;
+}
+                .telNumMobile {
+        display:inherit;
+    }
+
+    .telNumDesktop {
+        display:none;
+    }
+
+    .toolTipLinkTD {
+    width:100%;
+    float:none;
+    }
+    
+    .tdFooterContactNumDesktop {
+        display:none;
+    }
+
+    .tdFooterContactNumMobile {
+            display:block;
+    }
+}
+
+/* Tablet size - md */
+@media (min-width: 64em){
+
+    h1 {
+        margin-top:60px !important;
+        margin-bottom:40px !important;
+    }
+    .subHeadingQuestionnaire,.subHeadingSummary  {
+        margin-bottom:30px !important;
+        text-align:center !important;
+    }
+    .marginLeftQuesBtns {
+        margin-left:22px;
+    }
+    .headerSpacer {
+        height:70px;
+    }
+    .marginBottomProgressStep {
+        margin-bottom:20px !important;
+    }
+    .progress-wrapper {
+        padding-bottom:0px;
+    }
+    .td-progress-indicator {
+        padding-bottom:0px;
+    }
+    .marginTopMedQuestions {
+    margin-top:25px !important;
+    }
+    .questBtns {
+        margin-top:60px !important;
+        margin-bottom:60px !important;
+    }
+    .questDivider {
+        margin-top:45px !important;
+    }
+    .currHealthQuesTopPadding {
+        padding-top:40px !important
+    }
+    
+        .limitationsAndExclusions {
+    margin-top:30px !important;
+    margin-bottom:70px !important;
+}
+
+                .marginQuoteDetails {
+    margin-bottom:30px !important;
+}
+
+                    .marginPersonalDetails {
+        margin-top:30px !important;
+        margin-bottom:30px !important;
+    }
+    .errorIcon {
+        margin-right:15px
+    }
+
+    .marginAdditionalTravellers {
+        margin-top:30px !important;
+        margin-bottom:60px !important;
+    }
+    .buttonDivider {
+        margin-top:60px !important;
+    }
+    
+    label[for=formElement_3]  {
+        padding-left:25.7%;
+
+}
+    
+    .td-application-dob {
+    padding-top: 0px !important;
+} 
+    
+        footer .td-footer-content .td-footer-links {
+        line-height: 3 !important;
+    }   
+    
+            .firstFooterLink {
+        margin-left:32px;
+    }
+                .td-footer-links {
+                    line-height: 3 !important;
+    width:100% !important;
+}
+                        .td-next-button-margin {
+    margin-left:15px !important;
+}
+
+.td-prev-button-margin {
+    margin-right:15px !important;
+} 
+
+.rightIconAccordian {
+    width:163px;
+    float:right;
+} 
+
+    #SubmitSummary {
+     width:370px;
+}
+        .telNumMobile {
+        display:inherit;
+    }
+
+    .telNumDesktop {
+        display:none;
+    }
+        .toolTipLinkTD {
+    width:100%;
+    float:none;
+    }
+
+            .tdFooterContactNumDesktop {
+        display:none;
+}
+
+    .tdFooterContactNumMobile {
+            display:block;
+    }
+}
+
+/* Desktop size - lg */
+@media (min-width: 75em) {
+
+    h1 {
+        margin-top:60px !important;
+        margin-bottom:40px !important;
+    }
+    .subHeadingQuestionnaire,.subHeadingSummary  {
+        margin-bottom:30px !important;
+        text-align:center !important;
+    }
+    .marginLeftQuesBtns {
+        margin-left:22px;
+    }
+    .headerSpacer {
+        height:70px;
+    }
+    .marginBottomProgressStep {
+        margin-bottom:20px !important;
+    }
+    .progress-wrapper {
+        padding-bottom:0px;
+    }
+    
+    .td-progress-indicator {
+        padding-bottom:0px;
+    }
+
+    .marginIntroParagraph {
+        margin-bottom:30px !important;
+    }      
+
+    .marginTopMedQuestions {
+        margin-top:25px !important;
+    }
+
+    .questBtns {
+        margin-top:60px !important;
+        margin-bottom:60px !important;
+    }
+    .questDivider {
+        margin-top:45px !important;
+    }
+
+    .currHealthQuesTopPadding {
+        padding-top:40px !important
+    }
+
+    .limitationsAndExclusions {
+        margin-top:30px !important;
+        margin-bottom:70px !important;
+    }
+
+    .marginQuoteDetails,.marginPersonalDetails {
+        margin-bottom:30px !important;
+    }
+    .marginPersonalDetails {
+        margin-top:30px !important;
+        margin-bottom:30px !important;
+    }
+
+    errorIcon {
+ margin-right:15px
+}
+
+        .marginAdditionalTravellers {
+        margin-top:30px !important;
+        margin-bottom:60px !important;
+    }
+
+    .buttonDivider {
+        margin-top:60px !important;
+    }
+
+    label[for=formElement_3]  {
+        padding-left:25.6%;
+
+}
+    
+    .td-application-dob {
+    padding-top: 0px !important;
+} 
+
+    footer .td-footer-content .td-footer-links {
+        line-height: 3 !important;
+}
+
+    .firstFooterLink {
+        margin-left:32px;
+    }
+    
+        .td-footer-links {
+    width:100% !important;
+    }   
+
+                .td-next-button-margin {
+    margin-left:15px !important;
+}
+
+.td-prev-button-margin {
+    margin-right:15px !important;
+}
+
+.rightIconAccordian {
+    width:163px;
+    float:right;
+}
+
+    #SubmitSummary {
+     width:370px;
+}
+    .telNumMobile {
+        display:none;
+    }
+
+    .telNumDesktop {
+        display:block;
+        color:#1c1c1c;
+    }
+
+    .toolTipLinkTD {
+    width:100%;
+    float:none;
+    }
+
+    .tdFooterContactNumDesktop {
+        display:block;
+        color: #5bd453;
+        font-family: "Webly Sleek SemiLight",Helvetica-,droid sans,sans-serif;
+        margin-left: 10px;
+            font-size: 1.8125rem;
+    }
+
+    .tdFooterContactNumMobile {
+            display:none;
+}
+
+}
+
+.marginIntroParagraph {
+     margin-bottom:30px !important;
+    }
+
+
+
+.medQuesListTopPadding {
+ padding-top:15px;
+}
+
+.hideProgressBar {
+    display:none;
+}
+
+    .td-header-desktop .td-section-right:before {
+    height: 120% !important;
+}
+
+.spacer {
+    height: 30px;
+}
+
+.subHeadingSummary,.summaryIntro {
+    margin-bottom:40px !important;
+    text-align:center;
+}
+
+.marginNote {
+     margin-top:30px !important;
+    }
+
+h1.marginTopBottom30 {
+    margin-top:30px !important;
+    margin-bottom:30px !important;
+}
+
+h1.marginTop30 {
+    margin-top:30px !important;
+    margin-bottom:0px !important;
+}
+
+h1.margin0 {
+    margin-top:0px !important;
+    margin-bottom:0px !important;
+}
+
+h1.marginBottom30 {
+    margin-top:0px !important;
+    margin-bottom:30px !important;
+}
+
+h2.marginTop0{
+    margin-top:0px !important;
+}
+
+h2.marginBottom30{
+    margin-bottom:30px !important;
+}
+
+.agreementSection {
+ margin-top:20px;
+}
+
+
+
+.questionnaireResponses {
+    margin-bottom:20px;
+    
+}
+.td-questionnaire-table-row-odd > div, .td-questionnaire-table-row-even > div {
+    margin-top:20px;
+}
+    .questionnaireResponses > strong {
+     margin-left:30px;
+    }
+
+.questionnaireResponseContainer{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+.sectionLevelErrorMessageContainer {
+    margin-top:30px;
+    background-color:#f7e8e9;
+}
+.sectionLevelErrorMessageHeader {
+    font-family:WeblySleek UI Semilight;
+    font-size: 20px; 
+    color:#ae1100 !important;
+}
+.sectionLevelErrorMessageBody {
+    font-family:WeblySleek UI Semilight;
+    font-size: 16px;
+    color: #1c1c1c;
+}
+
+/*temporary - for testing*/
+.dateProperty  {
+width:100% !important;
+}
+
+/*temporary - for testing*/
+
+.marginBottom30 {
+margin-bottom:30px !important;
+}
+
+/* Quote Summary - Application page */
+@media (min-width: 0) {
+    .td-quote-summary-section {
+        background-color: #f4f7f4;
+        padding-bottom: 30px !important;
+        padding-left: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+@media (min-width: 48em) {
+    .td-quote-summary-section {
+    background-color: #f4f7f4;
+    padding-bottom: 30px !important;
+    }
+}
+
+.td-quote-summary-item {
+    margin-left: 21px !important;
+    padding-left: 24px !important;
+    margin-bottom: 10px !important;
+}
+.td-quote-summary-header {
+    display: inline-block;
+    margin-left: 19px;
+}
+
+/* Application page margins and padding */
+
+@media (min-width: 0) {
+    .td-floating-edit-button {
+        float: right;
+        margin-right: 10px;
+    }
+}
+@media (min-width: 64em) {
+    .td-floating-edit-button {
+        float: none;
+        margin-right: 5px;
+    }
+}
+/* March 01, 2017,per TD's comments, like change the background color to grey*/
+.td-radio-checkbox-inline.spaced input[type=checkbox].disabled+.card,.td-radio-checkbox-inline.spaced input[type=radio].disabled+.card,.td-radio-checkbox-inline.stacked input[type=checkbox].disabled+.card,.td-radio-checkbox-inline.stacked input[type=radio].disabled+.card {
+   color: #dadada;
+    background-color: transparent !important;
+    border-color: #c1c1c1;
+    border-width:1px
+}
+
+/* Updates to the radio button to get them to fit into standard td layout columns - doesn't quite work yet */
+.td-radio-columnfit-left {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 15px !important;
+}
+.td-radio-columnfit-right {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Disappearing index page rules */
+@media (min-width: 0) {
+    .td-xs-collapse-hr {
+        height: 0px !important;
+    }
+    .td-province-divider {
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+}
+@media (min-width: 48em) {
+    .td-xs-collapse-hr {
+        height: 1px !important;
+    }
+    .td-province-divider {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+/**/
+.td-resident-notification {
+    background-color: #ffffe6;
+    margin-left: 0;
+    margin-right: 0px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    width: 100% !important;
+}
+.td-resident-icon {
+    float:left;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+@media (min-width: 75em) {
+    .td-resident-icon {
+        margin-top: -4px;
+        margin-bottom: -10px;
+    }
+}
+.td-resident-inline {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+.td-resident-block {
+    overflow:hidden;
+}
+
+a:focus { outline:dotted thin; }
+
+.keywordText {
+    font-family:"Webly Sleek SemiLight", Helvetica-, droid sans, sans-serif !important;
+    font-size:initial !important;
+    color:#038203!important;
+}
+
+.marginLeftQuesBtns {
+ margin-left:22px;
+}
+
+.labelDOB {
+    margin-bottom:15px !important;
+}
+
+
+.toolTipLink {
+    font-family: "Webly Sleek SemiLight", Helvetica-, droid sans, sans-serif;
+    font-size: inherit !important;
+    line-height: 1.375;
+}
+
+/* Previous/next buttons to override form control style */
+@media (min-width: 0) {
+    .td-prev-button {
+        border-radius: 5px !important;
+        color: #008a00 !important;
+        border-color: #008a00 !important;
+        background-color: transparent !important;
+    }
+    .td-prev-button:hover,.td-prev-button:focus{
+        background-color: #ebebeb !important;
+    }
+    .td-next-button {
+        border-radius: 5px !important;
+        color: #fff !important;
+        background-color: #008a00 !important;
+        border-color: #008a00 !important;
+    }
+    .td-next-button:hover,.td-next-button:focus{
+        background-color: #007c16 !important;
+    }
+    .td-next-disabled {
+        background-color: #f3f3f3 !important;
+        color: #dadada !important;
+        border-color: #dadada !important;
+    }
+    .td-next-disabled:hover {
+        background-color: #f3f3f3 !important;
+        color: #dadada !important;
+        border-color: #dadada !important;
+    }
+    .td-button-primary-quote {
+        border-radius: 5px !important;
+        color: #fff !important;
+        background-color: #c55415 !important;
+        border-color: #c55415 !important;
+    }
+    .td-button-primary-quote:hover{
+        background-color: #eb5917 !important;
+    }
+}
+
+/* Toggle button wrapper provided by TD */
+.button-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.button-wrapper > div {
+  float: none;
+}
+.button-wrapper .td-button {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+@media only screen and ( max-width: 767px ) {
+  .button-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+      padding-top: 0px;
+      margin-top: 40px;
+  }
+
+.td-next-button-margin {
+    margin-left:0px !important;
+    margin-bottom: 10px !important;
+}
+
+.td-prev-button-margin {
+    margin-right:0px !important;
+    margin-top:10px !important;
+}   
+}
+
+@media (max-width: 48em) {
+    .button-wrapper {
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+        padding-bottom: 0px;
+    }
+}
+.button-wrapper {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+/*TD form.css 1.3.6 does not work properly on phone using multiple radio select*/
+/*label[for="pt-single"], label[for="pt-annual"], label[for="pt-tci"] {    
+   float:none !important;  
+}*/
+/*clicked class removes the label bodder which results two button (yes/no) do not lineup*/
+.td-radio-checkbox-inline input.clicked.checked+label.card,.td-radio-checkbox-inline input.clicked.checked+label.card:hover,.td-radio-checkbox-inline input.clicked.checked+label.card:focus { 
+    border: 1px solid #048403!important;
+}
+/*defined Yes/No focus/hover so that tab works */
+.td-radio-checkbox-inline input:not(:checked)+label.card:focus, .td-radio-checkbox-inline input:not(:checked)+label.card:hover {
+    outline: 0;
+    background-color: #d9ebd9;
+}
+
+
+/* Full bleed user location warning section */
+@media (min-width: 0) {
+    .td-canadian-residents-fullbleed {
+        width: auto !important;
+    }
+}
+@media (min-width: 75em) {
+    .td-canadian-residents-fullbleed {
+        width: 1200px;
+    }
+}
+
+/* Classes for text with right-aligned question block */
+.td-left-text {
+    float: left;
+    width: 90%;
+}
+.td-right-help {
+    float: right;
+}
+.td-right-help:after {
+    clear: both;
+}
+
+
+@media (min-width: 0) {
+    .td-xs-fullwidth {
+        width: 100%;
+    }
+}
+@media (min-width: 48em) {
+    .td-xs-fullwidth {
+        
+    }
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.td-inline-question-gap {
+    margin-left: 15px;
+}
+
+/*.checkBoxLabel {
+    display: table-cell !important;
+    vertical-align: middle !important;
+    padding-left: 5px !important;
+
+
+}
+
+.td-checkbox-div-wrapper > .td-checkbox-wrapper {
+    float:left !important;
+    width:auto !important;
+    display:flex;
+}
+
+
+
+.td-checkbox-div-wrapper.inline {
+    display:flex;
+}*/
+
+.td-checkbox-wrapper input {
+    margin-left:-10px;
+}
+
+
+.td-checkbox-div-wrapper .td-checkbox-wrapper input[type="checkbox"] + .card::before, .td-checkbox-div-wrapper .td-checkbox-wrapper input[type="checkbox"] + label::before, .td-checkbox-div-wrapper .td-checkbox-wrapper input[type="radio"] + .card::before, .td-checkbox-div-wrapper .td-checkbox-wrapper input[type="radio"] + label::before {
+left:0px;
+}
+/*Index page responsive customizing css*/
+/*phone*/
+.title-inline{
+    overflow:hidden;
+    white-space:nowrap
+}
+
+ .date-picker-button-margin-normal {
+     margin-top: 40px;
+     text-align:left
+    }
+.date-picker-button-margin-annual {
+     margin-top: 15px;    
+     text-align: left
+    }
+.date-picker-button-startdate-margin {
+        margin-top: 40px;
+        text-align:left
+    }
+.date-picker-button-enddate-margin {
+         margin-top: 20px;
+         text-align:left
+   }
+.plan-type-customize {
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -ms-flex-line-pack:justify;
+    -webkit-align-content:space-around;
+    align-content: space-around;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -ms-flex-wrap: none;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap:nowrap;
+    -webkit-box-pack:start;
+    -webkit-justify-content:flex-start;
+    justify-content:flex-start
+
+    }
+.questionare-edit-button-vertical-align{
+    margin-top:8px
+}
+.app-edit-button{
+    float:right;
+    margin-right:15px;
+}
+.customize-expiration-date{
+    color: #1c1c1c;
+    font-size:16px  
+}
+@media screen and (max-width:47.94em) {
+    .customize-expiration-date{  
+        margin-left:-2px;
+    }
+    .questionare-edit-button-vertical-align{
+        margin-top:8px
+    }
+     .plan-type-customize {
+       height: 90px;
+
+    }
+     .date-picker-xs11{ 
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left;
+         width: 95.66667%;
+     }
+    .date-picker-margin-left {
+      margin-left: 0px;     
+    }
+     .date-picker-margin-right {
+      margin-right: -35px;
+      padding-right:0px;
+    }
+    .date-picker-button-margin-normal {
+     margin-right: -65px;
+     padding-left:0px;
+    }
+    .date-picker-button-margin-annual {
+     margin-right: -65px; 
+     padding-left: 0px; 
+    }
+    .date-picker-button-startdate-margin{
+        padding-left:0px;
+    }
+    .date-picker-button-enddate-margin{
+         padding-left:0px;
+     }
+     .person-icon-wrapper{
+        width:170px !important;
+        height:136px !important
+    }
+}
+/*tablet portrait*/
+@media screen and (min-width:48em) and (max-width:63.94em) {
+     .customize-expiration-date{  
+        margin-left:-7px;
+    }
+     .plan-type-customize {
+        width: 235px;
+       height: 120px;
+
+    }
+    .date-picker-margin-left {
+        margin-left: 25px;      
+    }
+     .date-picker-margin-right {
+      margin-right: -35px;
+      padding-right:0px;
+    }
+    .date-picker-button-margin-normal {
+     margin-right: -65px;
+     padding-left:0px;
+    }
+    .date-picker-button-margin-annual {
+     margin-right: -65px; 
+     padding-left: 0px; 
+    }
+    .date-picker-button-startdate-margin {
+        padding-left:0px;
+    }
+    .date-picker-button-enddate-margin {
+         padding-left:0px;
+     }
+     .person-icon-wrapper{
+        width:170px !important;
+        height:136px !important;
+        margin-left:30px;
+    }
+}
+/*tablet landscape*/
+@media screen and (min-width:64em) and (max-width:74.94em) {
+     .customize-expiration-date{  
+        margin-left:-7px;
+    }
+    .app-edit-button{
+    float:right;
+    margin-right:210px;
+}
+    .plan-type-customize {
+        width: 312px;
+        height: 110px;
+    }
+    .date-picker-margin-left {
+        margin-left: 15px;    
+    }
+     .date-picker-margin-right {
+      margin-right: -35px;
+      padding-right:0px;
+    }
+    .date-picker-button-margin-normal {
+     margin-right: -65px;
+     padding-left:0px;
+    }
+    .date-picker-button-margin-annual { 
+     margin-right: -65px; 
+     padding-left: 0px; 
+    }
+    .date-picker-button-startdate-margin{
+        padding-left:0px;
+    }
+    .date-picker-button-enddate-margin{
+         padding-left:0px;
+     }
+     .person-icon-wrapper{
+        width:240px !important;
+        height:136px !important;
+        margin-left:30px;
+    }
+}
+/*desktop*/
+@media screen and (min-width:75em) {
+     .customize-expiration-date{  
+        margin-left:-5px;
+    }
+    .app-edit-button{
+        float:right;
+        margin-right:125px;
+    }
+    .plan-type-customize {
+        width: 381px;
+        height: 90px;
+    }
+   .date-picker-margin-left {
+        margin-left: 0px;
+    }
+    .date-picker-margin-right {
+      margin-right: -35px;
+      padding-right:0px;
+    }
+    .date-picker-button-margin-normal {
+     margin-right: -65px;
+     padding-left:0px;
+    }
+    .date-picker-button-margin-annual {
+     margin-right: -65px; 
+     padding-left: 0px; 
+    }
+    .date-picker-button-startdate-margin{
+        padding-left:0px;
+    }
+    .date-picker-button-enddate-margin{
+         padding-left:0px;
+     }
+    .person-icon-wrapper{
+        width:170px !important;
+        height:136px !important
+    }
+}
+
+.td-icon-wrapper.td-interactive-icon.td-triggericon-expanded:focus, .td-icon-wrapper.td-interactive-icon.td-triggericon-expanded:hover {
+    border-color: #2b5840;
+}
+
+
+.td-lightGreen-bckgrnd.td-interactive-icon.td-triggericon-expanded:focus {
+   border-color: #2b5840;
+}
+
+span.td-triggericon.white-border:focus:before
+
+#EligibilityTriggerIcon.td-icon-wrapper.td-interactive-icon:focus, #EligibilityTriggerIcon.td-icon-wrapper.td-interactive-icon:hover {
+    border-color: #2b5840;
+}
+
+#HealthHistoryTriggerIcon.td-icon-wrapper.td-interactive-icon:focus, #HealthHistoryTriggerIcon.td-icon-wrapper.td-interactive-icon:hover {
+    border-color: #2b5840;
+}
+
+#YourCurrentHealthTriggerIcon.td-icon-wrapper.td-interactive-icon:focus, #YourCurrentHealthTriggerIcon.td-icon-wrapper.td-interactive-icon:hover {
+    border-color: #2b5840;
+}
+.person-icon-wrapper{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -ms-flex-line-pack:justify;
+    -webkit-align-content:space-around;
+    align-content: space-around;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -ms-flex-wrap: none;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap:nowrap;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    justify-content:center
+
+}
+
+.leftIconAccordian {
+    width:47px;
+
+}
+
+#EligibilityEditTriggerIcon {
+    padding-left:10px;
+     padding-right:10px;
+}
+
+#HealthHistoryEditTriggerIcon {
+    padding-left:10px;
+     padding-right:10px;
+}
+#YourCurrentHealthEditTriggerIcon{
+    padding-left:10px;
+     padding-right:10px;
+}
+
+.editContainer {
+   padding-left:15px;
+}
+
+.numberCoveredDescription {
+    background-color: #f4f7f4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.td-lock-icon {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    padding: 0;
+    margin-top: -4px;
+    margin-left: -5px;
+
+}
+
+.td-footer-line {
+    background-color: #12422b !important;
+}
+
+.td-icon-edit2 {
+    margin-right:5px;
+}
+
+.font16 {
+    font-size: 16px !important;
+}
+
+.questAccordianTextPadding {
+    padding-right: 10px !important;
+    padding-left: 0px !important;
+}
+
+
+[aria-labelledby="q2-6 q2-6a"] {
+    margin-top:5px !important;
+}
+
+#td-fulfillment-email > div {
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+@media (max-width: 47.93em){
+.td-radio-checkbox-inline.stacked {
+    display: inline-block !important;
+}
+}
+
+.td-summary-expander,.td-medical-expander {
+    width: 20px !important;
+    height: 28px !important;
+    margin-top: 0px !important;
+}
+.td-custom-expander {
+    border-color: #008a00 !important;
+    color: #008a00 !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-top: 0px !important;
+}
+span.td-triggericon:before {
+    font-style: normal;
+    font-weight: 300;
+    font-variant: normal;
+    font-size: 125%;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #008a00;
+    display: block;
+    visibility: visible;
+    margin-top: -7px;
+}
+
+.td-header-nav {
+    position: relative !important;
+}
+
+.productOptionHeadings,.applicationHeadings,.summaryHeadings,.confirmationHeadings {
+     font-family: "Webly Sleek SemiLight",Helvetica-,droid sans,sans-serif;
+    font-size: 1.8125rem;
+    line-height: 1.31;
+    font-weight: 100;
+    color: #1a5336;
+}
+#ProvinceOfResidence:focus {border-bottom-color: green !important; }
+
+.td-icon-checkMark:focus,.editIcon:focus,.editIcon:focus,.editIcon:focus ~ .editIcon {
+    color: #5bd453!important;
+}
+
+
+span.td-triggericon.white-border:focus:before {
+   color: #2b5840;
+}
+
+.td-icon-wrapper.td-interactive-icon.td-medical-expander:focus, .td-icon-wrapper.td-interactive-icon.td-medical-expander:hover {
+    border-color: #2b5840 !important;
+}
+
+
+a:focus span.td-triggericon.white-border:before {
+    color: #2b5840;
+}
+div.td-lightGreen-bckgrnd a:focus span.td-triggericon.white-border {
+    border-color: #2b5840;
+}
+
+div.td-darkGreen-bckgrnd a:focus span.td-triggericon.white-border {
+    border-color: #5bd453!important;
+}
+
+div.td-darkGreen-bckgrnd a:focus span.td-triggericon.white-border:before {
+    color: #5bd453!important;
+}
+
+
+.summaryEditIcon:focus,.summaryEditIcon:focus ~ .summaryEditIcon {
+    color: #2b5840!important;
+}
+#consent2 {
+width: 98%;
+}
+
+
+
+/* Tooltip container */
+.tooltipkm {
+    position: relative;
+    display: inline-block;
+    
+}
+
+/* Tooltip text */
+.tooltipkm .tooltiptextkm {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltipkm .tooltiptextkm::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipkm:hover .tooltiptextkm {
+    visibility: visible;
+    opacity: 1;
+}
+
+input, select {
+	font-family: inherit;
+	font-size:100%;
+	color: #76768F !important; padding-left: 5px;
+	
+	
+	
+}
+
+select  {
+	
+	width: 100px !important;
+	
+	height:30px !important;
+	}
+	
+.white {
+	color: #FFFFFF !important;}	
+	
+
+		
+		.td-button {
+
+     font-family: "Webly Sleek SemiLight", Helvetica-, droid sans, sans-serif!important;
+    color: #fff;
+  
+  
+    
+}
+
+#personal-info {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+#personal-info select {
+    background-color: white;
+}
+
+#personal-info .form-fields > div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+#personal-info .form-fields input,
+#personal-info .form-fields select {
+    border: solid 1px #dadada;
+    line-height: 1.8rem;
+    flex: 1;
+    padding: 4px;
+    outline: 0;
+}
+
+#personal-info .form-fields .tooltipkm {
+    flex: 0 0 70px;
+}
+
+#personal-info .form-actions {
+    text-align: right;
+}
